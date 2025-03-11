@@ -5,6 +5,27 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style>
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: rgb(0, 0, 0);
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 100px;
+            transition: background-color .3s;
+            background-color: #bebebe;
+            margin: 0 4px;
+        }
+
+        .pagination a.active {
+            background-color: #ebebeb;
+            color: rgb(76, 76, 76);
+        }
+        .pagination a:hover:not(.active) {background-color: #ffffff;}
+
         @keyframes slide-horizontal-new {
             0% {
                 transform: translateX(100%);
@@ -7470,7 +7491,7 @@
             box-shadow: none!important
         }
         
-        .InKIFF {
+        .RedBackground {
             -webkit-backdrop-filter: var(--backdrop-filter, none);
             backdrop-filter: var(--backdrop-filter, none);
             background-color: var(--container-corvid-background-color, rgba(var(--bg, var(--color_11, color_11)), var(--alpha-bg, 1)));
@@ -13756,7 +13777,7 @@
         <div data-testid="responsive-container-content" class="h32j2-container">
             <section id="comp-lmu67ay0_r_comp-kbgajy18" tabindex="-1" data-block-level-container="Section" class="xuzjBY comp-lmu67ay0_r_comp-kbgajy18-container comp-lmu67ay0_r_comp-kbgajy18 xuzjBY wixui-header undefined" data-testid="section-container">
                 <div id="comp-lmu67ay0_r_comp-lmusif8t" role="" class="rM7ckN YJEKQk comp-lmu67ay0_r_comp-lmusif8t-container comp-lmu67ay0_r_comp-lmusif8t wixui-box">
-                    <div class="YAf4Ti InKIFF wixui-box"></div>
+                    <div class="YAf4Ti RedBackground wixui-box"></div>
                     <!--$-->
                     <div id="comp-lmu67ay0_r_comp-kd5pcdw0" class="comp-lmu67ay0_r_comp-kd5pcdw0 wixui-vector-image">
                         <div data-testid="svgRoot-comp-lmu67ay0_r_comp-kd5pcdw0" class="AKxYR5 VZYmYf comp-lmu67ay0_r_comp-kd5pcdw0">
@@ -18926,7 +18947,7 @@
                     </div>
                     <!--$-->
                     <div id="comp-lu03ezjc" role="" class="rM7ckN YJEKQk comp-lu03ezjc-container comp-lu03ezjc wixui-box">
-                        <div class="YAf4Ti InKIFF wixui-box"></div>
+                        <div class="YAf4Ti RedBackground wixui-box"></div>
                         <!--$-->
                         <div id="comp-lu03ezjj5" class="comp-lu03ezjj5" style="height:auto">
                             <div class="RichContentViewer2447840476__root wixui-rich-content-viewer" style="background-color:rgb(var(--bgColor, var(--color_11)), var(--alpha-bgColor, 1));border-radius:var(--borderRadius, 0);border:calc(1px * var(--borderWidth, 0)) solid rgb(var(--borderColor, var(--color_15)), var(--alpha-borderColor, 0.7));padding:calc(1px * var(--verticalPadding, 0)) calc(1px * var(--horizontalPadding, 0))">
@@ -18952,243 +18973,48 @@
 </svg>
 </span></span></span></button></div>
                         <!--/$-->
-                        <script>
-                            $w.onReady(function () {
-                                //sets the dataset's page size
-                                
-                                JSopacity(1);
-                                Jopacity(1)
-                                $w('#dataset1').setPageSize(1) //change this value to display more items
-                                $w('#dataset3').setPageSize(1)
-                            });
-                            var jSmaxpagi =6;
-                            var jSpaginum = 1;
-
-                            var jMaxpagi=7;
-                            var jPaginum=1;
-
-                            export function JSback_click() {
-                                if(jSpaginum!=1){
-                                    $w('#dataset1').loadPage(jSpaginum-1)
-                                    jSpaginum--;
-                                    JSopacity(jSpaginum)
-                                }
-                            }
-
-                            export function Jback_click() {
-                                if(jPaginum!=1){
-                                    $w('#dataset3').loadPage(jPaginum-1)
-                                    jPaginum--;
-                                    Jopacity(jPaginum)
-                                }
-                            }
-
-
-                            export function JSnext_click() {
-                                if(jSpaginum!=jSmaxpagi){
-                                    $w('#dataset1').loadPage(jSpaginum+1)
-                                    jSpaginum++;
-                                    JSopacity(jSpaginum)
-                                }
-                            }
-
-
-                            export function Jnext_click() {
-                                if(jPaginum!=jMaxpagi){
-                                    $w('#dataset3').loadPage(jPaginum+1)
-                                    jPaginum++;
-                                    Jopacity(jPaginum)
-                                }
-                            }
-
-
-                            function JSopacity() {
-
-                                JStextSize(clicked)
-                                $w('#JSpag'+clicked).disable()
-                                jSpaginum=clicked;
-
-                                
-
-                                if(clicked!=1){
-                                    $w('#JSback').enable()
-                                    for(var i=1;i<clicked;i++){
-                                        $w('#JSpag'+i).enable()
-                                    }
-                                }else{
-                                    $w('#JSback').disable()
-                                }
-                                for(var j=clicked+1;j<jSmaxpagi+1;j++){
-                                        $w('#JSpag'+j).enable()
-                                }
-                                if(jSpaginum!=jSmaxpagi){
-                                    $w('#JSnext').enable()
-                                }else{
-                                    $w('#JSnext').disable()
-                                }
-                            }
-
-
-
-                            function JStextSize() {
-                                if(clicked>=4){
-                                    $w('#detail1').html='<p><span style="font-size:'+20+'px">Your text</span></p>'
-
-                                    $w('#detail2').html='<p><span style="font-size:'+20+'px">Your text</span></p>'
-
-                                    $w('#detail3').html='<p><span style="font-size:'+20+'px">Your text</span></p>'
-                                }else{
-                                    $w('#detail1').html='<p><span style="font-size:'+31+'px">Your text</span></p>'
-
-                                    $w('#detail2').html='<p><span style="font-size:'+29+'px">Your text</span></p>'
-
-                                    $w('#detail3').html='<p><span style="font-size:'+25+'px">Your text</span></p>'
-
-                                }
-                            }
-
-                            export function JSpag1() {
-                                $w('#dataset1').loadPage(1);
-                                JSopacity(1)
-                            }
-
-                            export function JSpag2() {
-                                print(test)
-                                $w('#dataset1').loadPage(2);
-                                JSopacity(2)
-                            }
-
-                            export function JSpag3() {
-                                $w('#dataset1').loadPage(3);
-                                JSopacity(3)
-                            }
-
-                            export function JSpag4() {
-                                $w('#dataset1').loadPage(4);
-                                JSopacity(4)
-                            }
-
-                            export function JSpag5() {
-                                $w('#dataset1').loadPage(5);
-                                JSopacity(5)
-                            }
-
-                            export function JSpag6() {
-                                $w('#dataset1').loadPage(6);
-                                JSopacity(6)
-                            }
-
-                            function Jopacity(clicked) {
-
-                                //JtextSize(clicked)
-                                $w('#Jpag'+clicked).disable()
-                                jPaginum=clicked;
-
-                                
-
-                                if(clicked!=1){
-                                    $w('#Jback').enable()
-                                    for(var i=1;i<clicked;i++){
-                                        $w('#Jpag'+i).enable()
-                                    }
-                                }else{
-                                    $w('#Jback').disable()
-                                }
-                                for(var j=clicked+1;j<jMaxpagi+1;j++){
-                                        $w('#Jpag'+j).enable()
-                                }
-                                if(jPaginum!=jMaxpagi){
-                                    $w('#Jnext').enable()
-                                }else{
-                                    $w('#Jnext').disable()
-                                }
-                            }
-
-                            export function Jpag1(event) {
-                                $w('#dataset3').loadPage(1);
-                                Jopacity(1)
-                            }
-
-                            export function Jpag2(event) {
-                                $w('#dataset3').loadPage(2);
-                                Jopacity(2)
-                            }
-
-                            export function Jpag3(event) {
-                                $w('#dataset3').loadPage(3);
-                                Jopacity(3)
-                            }
-
-                            export function Jpag4(event) {
-                                $w('#dataset3').loadPage(4);
-                                Jopacity(4)
-                            }
-
-                            export function Jpag5(event) {
-                                $w('#dataset3').loadPage(5);
-                                Jopacity(5)
-                            }
-
-                            export function Jpag6(event) {
-                                $w('#dataset3').loadPage(6);
-                                Jopacity(6)
-                            }
-
-                            export function Jpag7(event) {
-                                $w('#dataset3').loadPage(7);
-                                Jopacity(7) 
-                            }
-                        </script>
                         <!--PAGINATION JS$-->
                         <div id="comp-lu061zi8" role="" class="rM7ckN YJEKQk comp-lu061zi8-container comp-lu061zi8 wixui-box">
-                            <div class="YAf4Ti InKIFF wixui-box"></div>
-                            <!--$-->
-                            <div id="comp-lu03len73" class="comp-lu03len73" data-semantic-classname="button"><button type="button" disabled="" class="StylableButton2545352419__root StylableButton2545352419--disabled style-lu03len81__root wixui-button" data-testid="buttonContent" aria-label="page 1"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">page 1</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
-    <g>
-        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
-    </g>
-</svg>
-</span></span></span></button></div>
+                            <div class="pagination">
+                                <a href="#"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                    <g>
+                                        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
+                                    </g>
+                                </svg>
+                                </span></span></a>
+                                <a href="#" class="active"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                    <g>
+                                        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
+                                    </g>
+                                </svg>
+                                </span></span></a>
+                                <a href="#"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                    <g>
+                                        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
+                                    </g>
+                                </svg>
+                                </span></span></a>
+                                <a href="#"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                    <g>
+                                        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
+                                    </g>
+                                </svg>
+                                </span></span></a>
+                                <a href="#"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                    <g>
+                                        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
+                                    </g>
+                                </svg>
+                                </span></span></a>
+                                <a href="#"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                    <g>
+                                        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
+                                    </g>
+                                </svg>
+                                </span></span></a>
+                            </div>
                             <!--/$-->
                             <!--$-->
-                            <div id="comp-lu061v3w" class="comp-lu061v3w" data-semantic-classname="button"><button type="button" onClick="JSpag2" class="StylableButton2545352419__root style-lu061v422__root wixui-button" data-testid="buttonContent" aria-label="page 2"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">page 2</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
-    <g>
-        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
-    </g>
-</svg>
-</span></span></span></button></div>
-                            <!--/$-->
-                            <!--$-->
-                            <div id="comp-lu075w3t" class="comp-lu075w3t" data-semantic-classname="button"><button type="button" class="StylableButton2545352419__root style-lu075w3w3__root wixui-button" data-testid="buttonContent" aria-label="page 3"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">page 3</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
-    <g>
-        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
-    </g>
-</svg>
-</span></span></span></button></div>
-                            <!--/$-->
-                            <!--$-->
-                            <div id="comp-m0znwfdf" class="comp-m0znwfdf" data-semantic-classname="button"><button type="button" class="StylableButton2545352419__root style-m0znwfdv3__root wixui-button" data-testid="buttonContent" aria-label="page 4"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">page 4</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
-    <g>
-        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
-    </g>
-</svg>
-</span></span></span></button></div>
-                            <!--/$-->
-                            <!--$-->
-                            <div id="comp-m0zn2zve" class="comp-m0zn2zve" data-semantic-classname="button"><button type="button" class="StylableButton2545352419__root style-m0zn2zvj1__root wixui-button" data-testid="buttonContent" aria-label="Page 5"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">Page 5</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
-    <g>
-        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
-    </g>
-</svg>
-</span></span></span></button></div>
-                            <!--/$-->
-                            <!--$-->
-                            <div id="comp-m0zoem4o" class="comp-m0zoem4o" data-semantic-classname="button"><button type="button" class="StylableButton2545352419__root style-m0zoem4u5__root wixui-button" data-testid="buttonContent" aria-label="page 6"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">page 6</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
-    <g>
-        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
-    </g>
-</svg>
-</span></span></span></button></div>
                             <!--/$-->
                         </div>
                         <!--/$-->
@@ -19229,7 +19055,7 @@
                     </div>
                     <!--$-->
                     <div id="comp-m16km63n" role="" class="rM7ckN YJEKQk comp-m16km63n-container comp-m16km63n wixui-box">
-                        <div class="YAf4Ti InKIFF wixui-box"></div>
+                        <div class="YAf4Ti RedBackground wixui-box"></div>
                         <!--$-->
                         <div id="comp-m16km63w" class="comp-m16km63w" style="height:auto">
                             <div class="RichContentViewer2447840476__root wixui-rich-content-viewer" style="background-color:rgb(var(--bgColor, var(--color_11)), var(--alpha-bgColor, 1));border-radius:var(--borderRadius, 0);border:calc(1px * var(--borderWidth, 0)) solid rgb(var(--borderColor, var(--color_15)), var(--alpha-borderColor, 0.7));padding:calc(1px * var(--verticalPadding, 0)) calc(1px * var(--horizontalPadding, 0))">
@@ -19268,7 +19094,7 @@
                         <!--/$-->
                         <!--$-->
                         <div id="comp-m16km64j" role="" class="rM7ckN YJEKQk comp-m16km64j-container comp-m16km64j wixui-box">
-                            <div class="YAf4Ti InKIFF wixui-box"></div>
+                            <div class="YAf4Ti RedBackground wixui-box"></div>
                             <!--$-->
                             <div id="comp-m16km64s" class="comp-m16km64s" data-semantic-classname="button"><button type="button" disabled="" class="StylableButton2545352419__root StylableButton2545352419--disabled style-m16km64w4__root wixui-button" data-testid="buttonContent" aria-label="page 1"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">page 1</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
     <g>
