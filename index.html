@@ -18952,7 +18952,194 @@
 </svg>
 </span></span></span></button></div>
                         <!--/$-->
-                        <!--$-->
+                        <script>
+                            $w.onReady(function () {
+                                //sets the dataset's page size
+                                
+                                JSopacity(1);
+                                Jopacity(1)
+                                $w('#dataset1').setPageSize(1) //change this value to display more items
+                                $w('#dataset3').setPageSize(1)
+                            });
+                            var jSmaxpagi =6;
+                            var jSpaginum = 1;
+
+                            var jMaxpagi=7;
+                            var jPaginum=1;
+
+                            export function JSback_click() {
+                                if(jSpaginum!=1){
+                                    $w('#dataset1').loadPage(jSpaginum-1)
+                                    jSpaginum--;
+                                    JSopacity(jSpaginum)
+                                }
+                            }
+
+                            export function Jback_click() {
+                                if(jPaginum!=1){
+                                    $w('#dataset3').loadPage(jPaginum-1)
+                                    jPaginum--;
+                                    Jopacity(jPaginum)
+                                }
+                            }
+
+
+                            export function JSnext_click() {
+                                if(jSpaginum!=jSmaxpagi){
+                                    $w('#dataset1').loadPage(jSpaginum+1)
+                                    jSpaginum++;
+                                    JSopacity(jSpaginum)
+                                }
+                            }
+
+
+                            export function Jnext_click() {
+                                if(jPaginum!=jMaxpagi){
+                                    $w('#dataset3').loadPage(jPaginum+1)
+                                    jPaginum++;
+                                    Jopacity(jPaginum)
+                                }
+                            }
+
+
+                            function JSopacity() {
+
+                                JStextSize(clicked)
+                                $w('#JSpag'+clicked).disable()
+                                jSpaginum=clicked;
+
+                                
+
+                                if(clicked!=1){
+                                    $w('#JSback').enable()
+                                    for(var i=1;i<clicked;i++){
+                                        $w('#JSpag'+i).enable()
+                                    }
+                                }else{
+                                    $w('#JSback').disable()
+                                }
+                                for(var j=clicked+1;j<jSmaxpagi+1;j++){
+                                        $w('#JSpag'+j).enable()
+                                }
+                                if(jSpaginum!=jSmaxpagi){
+                                    $w('#JSnext').enable()
+                                }else{
+                                    $w('#JSnext').disable()
+                                }
+                            }
+
+
+
+                            function JStextSize() {
+                                if(clicked>=4){
+                                    $w('#detail1').html='<p><span style="font-size:'+20+'px">Your text</span></p>'
+
+                                    $w('#detail2').html='<p><span style="font-size:'+20+'px">Your text</span></p>'
+
+                                    $w('#detail3').html='<p><span style="font-size:'+20+'px">Your text</span></p>'
+                                }else{
+                                    $w('#detail1').html='<p><span style="font-size:'+31+'px">Your text</span></p>'
+
+                                    $w('#detail2').html='<p><span style="font-size:'+29+'px">Your text</span></p>'
+
+                                    $w('#detail3').html='<p><span style="font-size:'+25+'px">Your text</span></p>'
+
+                                }
+                            }
+
+                            export function JSpag1() {
+                                $w('#dataset1').loadPage(1);
+                                JSopacity(1)
+                            }
+
+                            export function JSpag2() {
+                                print(test)
+                                $w('#dataset1').loadPage(2);
+                                JSopacity(2)
+                            }
+
+                            export function JSpag3() {
+                                $w('#dataset1').loadPage(3);
+                                JSopacity(3)
+                            }
+
+                            export function JSpag4() {
+                                $w('#dataset1').loadPage(4);
+                                JSopacity(4)
+                            }
+
+                            export function JSpag5() {
+                                $w('#dataset1').loadPage(5);
+                                JSopacity(5)
+                            }
+
+                            export function JSpag6() {
+                                $w('#dataset1').loadPage(6);
+                                JSopacity(6)
+                            }
+
+                            function Jopacity(clicked) {
+
+                                //JtextSize(clicked)
+                                $w('#Jpag'+clicked).disable()
+                                jPaginum=clicked;
+
+                                
+
+                                if(clicked!=1){
+                                    $w('#Jback').enable()
+                                    for(var i=1;i<clicked;i++){
+                                        $w('#Jpag'+i).enable()
+                                    }
+                                }else{
+                                    $w('#Jback').disable()
+                                }
+                                for(var j=clicked+1;j<jMaxpagi+1;j++){
+                                        $w('#Jpag'+j).enable()
+                                }
+                                if(jPaginum!=jMaxpagi){
+                                    $w('#Jnext').enable()
+                                }else{
+                                    $w('#Jnext').disable()
+                                }
+                            }
+
+                            export function Jpag1(event) {
+                                $w('#dataset3').loadPage(1);
+                                Jopacity(1)
+                            }
+
+                            export function Jpag2(event) {
+                                $w('#dataset3').loadPage(2);
+                                Jopacity(2)
+                            }
+
+                            export function Jpag3(event) {
+                                $w('#dataset3').loadPage(3);
+                                Jopacity(3)
+                            }
+
+                            export function Jpag4(event) {
+                                $w('#dataset3').loadPage(4);
+                                Jopacity(4)
+                            }
+
+                            export function Jpag5(event) {
+                                $w('#dataset3').loadPage(5);
+                                Jopacity(5)
+                            }
+
+                            export function Jpag6(event) {
+                                $w('#dataset3').loadPage(6);
+                                Jopacity(6)
+                            }
+
+                            export function Jpag7(event) {
+                                $w('#dataset3').loadPage(7);
+                                Jopacity(7) 
+                            }
+                        </script>
+                        <!--PAGINATION JS$-->
                         <div id="comp-lu061zi8" role="" class="rM7ckN YJEKQk comp-lu061zi8-container comp-lu061zi8 wixui-box">
                             <div class="YAf4Ti InKIFF wixui-box"></div>
                             <!--$-->
@@ -18964,7 +19151,7 @@
 </span></span></span></button></div>
                             <!--/$-->
                             <!--$-->
-                            <div id="comp-lu061v3w" class="comp-lu061v3w" data-semantic-classname="button"><button type="button" class="StylableButton2545352419__root style-lu061v422__root wixui-button" data-testid="buttonContent" aria-label="page 2"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">page 2</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                            <div id="comp-lu061v3w" class="comp-lu061v3w" data-semantic-classname="button"><button type="button" onClick="JSpag2" class="StylableButton2545352419__root style-lu061v422__root wixui-button" data-testid="buttonContent" aria-label="page 2"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">page 2</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
     <g>
         <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
     </g>
