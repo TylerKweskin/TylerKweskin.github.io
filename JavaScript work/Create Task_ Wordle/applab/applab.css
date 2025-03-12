@@ -168,10 +168,10 @@ h2 {
 }
 
 a {
-  color: #0596ce;
+  color: #e7e8ea;
 }
 a:hover {
-  color: #0596ce;
+  color: #b8b9bb;
   background: none;
 }
 
@@ -2460,11 +2460,11 @@ button.more-link{
 }
 
 i.fa.fa-caret-up::before{
-  content: "▲";
+  content: "▼";
 }
 
 i.fa.fa-caret-down::before{
-  content: "▼";
+  content: "▲";
 }
 
 .fa {

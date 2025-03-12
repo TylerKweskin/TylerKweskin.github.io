@@ -168,10 +168,10 @@ h2 {
 }
 
 a {
-  color: #0596ce;
+  color: #e7e8ea;
 }
 a:hover {
-  color: #0596ce;
+  color: #b8b9bb;
   background: none;
 }
 
@@ -2366,7 +2366,112 @@ div.WireframeButtons_active {
 #designModeViz.appModern,
 .draggingParent {
   color: #333;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
 }
+
+.dark .small-footer-base,.dark #more-menu {
+  background-color: #4d575f;
+  width: 100%;
+  max-width: 400px;
+  border: 0;
+  color: #949ca2;
+  justify-content: flex-end;
+  position: absolute;
+  display: flex;
+  bottom: 75px;
+  margin-inline-end: 0;
+  margin-inline-start: 15px;
+}
+
+#more-menu {
+  z-index: 998;
+}
+
+#more-menu {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.small-footer-base, #more-menu {
+  background-color: initial;
+  color: #696969;
+  font-size: 14px;
+  margin: 8px;
+}
+
+.small-footer-base a:visited, #more-menu a:visited {
+  color: #5b6770;
+  text-decoration: none;
+}
+.dark .small-footer-base a:visited, .dark #more-menu a:visited {
+  color: #e7e8ea;
+}
+
+#more-menu>li>a {
+  display: block;
+  padding: 3px 15px 3px 15px;
+  border-bottom: solid thin #e7e8ea;
+}
+
+.small-footer-base a, #more-menu a {
+  font-family: "Figtree", "Noto Sans", "Noto Sans Math", "Noto Sans Arabic", "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans SC", "Noto Sans TC", "Noto Sans Devanagari", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans JP", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans KR", "Noto Sans Myanmar", "Noto Sans Sinhala", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", "Noto Sans Thaana", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+li {
+  line-height: 20px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+
+.small-footer-base{
+  z-index: 1000;
+}
+
+button.more-link{
+  margin: 0 15px;
+  background-color: #4d575f;
+  border: 0;
+  color: #949ca2;
+  font-size: 14px;
+  padding: 0;
+}
+
+.fa-solid,.fa-regular,.fa-brands,.fas,.far,.fab,.fal,.fat,.fad,.fass,.fasr,.fasl,.fast,.fasds,.fa-light,.fa-thin,.fa-duotone,.fa-sharp,.fa-sharp-duotone,.fa-sharp-solid,.fa-classic,.fa {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display,inline-block);
+  font-variant: normal;
+  text-rendering: auto;
+  font-style: normal;
+  line-height: 1
+}
+
+i.fa.fa-caret-up::before{
+  content: "▼";
+}
+
+i.fa.fa-caret-down::before{
+  content: "▲";
+}
+
+.fa {
+    font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+    font-weight: var(--fa-style, 900);
+}
+
 #divApplab.appModern button,
 #designModeViz.appModern button,
 .draggingParent button {
@@ -2727,9 +2832,8 @@ div#visualizationResizeBar {
   max-width: none !important;
   width: 352px;
   height: 612px;
-  margin: 0 auto;
-  padding: 20px 0;
   background-size: initial;
+  align-content:center;
 }
 #visualizationColumn.wireframeShare #playSpaceHeader,
 #visualizationColumn.wireframeShare #gameButtons {

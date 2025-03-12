@@ -36,10 +36,10 @@ export function JSback_click(event) {
 }
 
 export function Jback_click(event) {
-	if(jPaginum!=1){
-		$w('#dataset3').loadPage(jPaginum-1)
-		jPaginum--;
-		Jopacity(jPaginum)
+	if(jSpaginum!=1){
+		$w('#dataset3').loadPage(jSpaginum-1)
+		jSpaginum--;
+		Jopacity(jSpaginum)
 	}
 }
 
