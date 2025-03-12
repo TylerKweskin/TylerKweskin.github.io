@@ -4,6 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="js/s.js"></script>
     <style>
         .pagination {
             display: inline-block;
@@ -18,13 +19,17 @@
             transition: background-color .3s;
             background-color: #bebebe;
             margin: 0 4px;
+            
         }
 
         .pagination a.active {
             background-color: #ebebeb;
-            color: rgb(76, 76, 76);
+            fill: rgb(192, 192, 192);
         }
-        .pagination a:hover:not(.active) {background-color: #ffffff;}
+        .pagination a:hover:not(.active) {
+            background-color: #000000;
+            fill: rgb(255, 255, 255);
+        }
 
         @keyframes slide-horizontal-new {
             0% {
@@ -8194,6 +8199,7 @@
             font: var(--font_2);
             color: rgb(var(--color_15));
             letter-spacing: 0em;
+            padding-top: 15px;
         }
         
         .font_3 {
@@ -18952,7 +18958,9 @@
                         <div id="comp-lu03ezjj5" class="comp-lu03ezjj5" style="height:auto">
                             <div class="RichContentViewer2447840476__root wixui-rich-content-viewer" style="background-color:rgb(var(--bgColor, var(--color_11)), var(--alpha-bgColor, 1));border-radius:var(--borderRadius, 0);border:calc(1px * var(--borderWidth, 0)) solid rgb(var(--borderColor, var(--color_15)), var(--alpha-borderColor, 0.7));padding:calc(1px * var(--verticalPadding, 0)) calc(1px * var(--horizontalPadding, 0))">
                                 <div class="_4Ub0k" style="height: 624px; max-height: 624px;" data-hook="HtmlComponent">
-                                    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/iABIVY2udM61hsR7wW-2GL3k0zWVqdIdMw9JzS1O72E/embed"></iframe>
+                                    <div class="full_container">
+                                        <iframe id="iframe" width="352" height="612" style="border: 0px; margin-top: 30px;" src="JavaScript work/Create Task_ Wordle/index.html"></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -18973,40 +18981,42 @@
 </svg>
 </span></span></span></button></div>
                         <!--/$-->
-                        <!--PAGINATION JS$-->
+                        <!--PAGINATION JS NOTE1$-->
                         <div id="comp-lu061zi8" role="" class="rM7ckN YJEKQk comp-lu061zi8-container comp-lu061zi8 wixui-box">
                             <div class="pagination">
-                                <a href="#"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                <a id ="JSpag1" href="#" onclick="JSpag1()" class="active"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                    <g>
+                                        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
+                                    </g>
+                                </svg>
+                                </span>
+                                </button>
+                                </span></a>
+                                <a id ="JSpag2" href="#" onclick="JSpag2()" class="active"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
                                     <g>
                                         <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
                                     </g>
                                 </svg>
                                 </span></span></a>
-                                <a href="#" class="active"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                <a id ="JSpag3" href="#" class="a"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
                                     <g>
                                         <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
                                     </g>
                                 </svg>
                                 </span></span></a>
-                                <a href="#"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                <a id ="JSpag4" href="#" class="a"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
                                     <g>
                                         <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
                                     </g>
                                 </svg>
                                 </span></span></a>
-                                <a href="#"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                <a id ="JSpag5" href="#" class="a"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
                                     <g>
                                         <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
                                     </g>
                                 </svg>
                                 </span></span></a>
-                                <a href="#"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
-                                    <g>
-                                        <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
-                                    </g>
-                                </svg>
-                                </span></span></a>
-                                <a href="#"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                <a id ="JSpag6" href="#" class="a"><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="150" xmlns="http://www.w3.org/2000/svg" data-type="shape">
                                     <g>
                                         <path d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z"></path>
                                     </g>
@@ -19034,7 +19044,7 @@
                         </div>
                         <!--/$-->
                         <!--$-->
-                        <div id="comp-lu03ezjh" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lu03ezjh wixui-rich-text" data-testid="richTextElement" ariaattributes="[object Object]">
+                        <div id="comp-lu03ezjh" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lu03ezjh wixui-rich-text" data-testid="richTextElement" ariaattributes="[object Object]" >
                             <h2 class="font_2 wixui-rich-text__text"><span class="wixui-rich-text__text">Wordle</span></h2>
                         </div>
                         <!--/$-->
@@ -19311,7 +19321,7 @@
 
 
 
-
+    
 
 
 

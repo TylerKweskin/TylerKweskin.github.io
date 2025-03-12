@@ -1,0 +1,57 @@
+@charset "utf-8";.fak.fa-ai-bot-regular:before,.fa-kit.fa-ai-bot-regular:before {
+    content: ""
+}
+
+.fak.fa-ai-bot-solid:before,.fa-kit.fa-ai-bot-solid:before {
+    content: ""
+}
+
+.fak.fa-clever:before,.fa-kit.fa-clever:before {
+    content: ""
+}
+
+.fak.fa-click-to-continue-down:before,.fa-kit.fa-click-to-continue-down:before {
+    content: ""
+}
+
+.fak.fa-click-to-continue-up:before,.fa-kit.fa-click-to-continue-up:before {
+    content: ""
+}
+
+.fak.fa-connected-level:before,.fa-kit.fa-connected-level:before {
+    content: ""
+}
+
+.fak.fa-solid-gear-pen:before,.fa-kit.fa-solid-gear-pen:before {
+    content: ""
+}
+
+.fak.fa-solid-thumbtack-slash:before,.fa-kit.fa-solid-thumbtack-slash:before {
+    content: ""
+}
+
+.fak.fa-text-speech:before,.fa-kit.fa-text-speech:before {
+    content: ""
+}
+
+.fak.fa-text-speech-pause:before,.fa-kit.fa-text-speech-pause:before {
+    content: ""
+}
+
+.fak,.fa-kit {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: Font Awesome Kit;
+    font-style: normal;
+    line-height: 1
+}
+
+@font-face {
+    font-family: Font Awesome Kit;
+    font-style: normal;
+    font-display: block;
+    src: url(https://dsco.code.org/assets/font-awesome-pro/1728421354/webfonts/custom-icons.woff2)format("woff2"),url(https://dsco.code.org/assets/font-awesome-pro/1728421354/webfonts/custom-icons.ttf)format("truetype")
+}
