@@ -24,7 +24,6 @@
             transition: background-color .3s;
             background-color: #bebebe;
             margin: 0 4px;
-
         }
 
         .pagination a.active {
@@ -37,6 +36,30 @@
             fill: rgb(255, 255, 255);
         }
 
+        .pagination2 {
+            display: inline-block;
+        }
+
+        .pagination2 a {
+            color: rgb(0, 0, 0);
+            float: left;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 100px;
+            transition: background-color .3s;
+            background-color: #bebebe;
+            margin: 0 4px;
+        }
+        .pagination2 a.active {
+            background-color: #ebebeb;
+            fill: rgb(192, 192, 192);
+        }
+
+        .pagination2 a:hover:not(.active) {
+            background-color: #000000;
+            fill: rgb(255, 255, 255);
+        }
+    
         .nexts a {
             color: rgb(0, 0, 0);
             float: left;
@@ -58,8 +81,32 @@
             fill: rgb(255, 255, 255);
         }
 
+        .nexts2 a {
+            color: rgb(0, 0, 0);
+            float: left;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 100px;
+            transition: background-color .3s;
+            background-color: #bebebe;
+            margin: 0 4px;
+        }
+
+        .nexts2 a.active {
+            background-color: #ebebeb;
+            fill: rgb(192, 192, 192);
+        }
+
+        .nexts2 a:hover:not(.active) {
+            background-color: #000000;
+            fill: rgb(255, 255, 255);
+        }
+
         @media screen and (max-width: 750px){
             .nexts {
+                display: none;
+            }
+            .nexts2 {
                 display: none;
             }
         }
@@ -20243,7 +20290,7 @@
                                 style="background-color:rgb(var(--bgColor, var(--color_11)), var(--alpha-bgColor, 1));border-radius:var(--borderRadius, 0);border:calc(1px * var(--borderWidth, 0)) solid rgb(var(--borderColor, var(--color_15)), var(--alpha-borderColor, 0.7));padding:calc(1px * var(--verticalPadding, 0)) calc(1px * var(--horizontalPadding, 0))">
                                 <div class="_4Ub0k" style="height: 624px; max-height: 624px;" data-hook="HtmlComponent">
                                     <div class="full_container" style="margin-top: 30px;">
-                                        <iframe id="iframe" width="352" height="612" style="border: 0px;"
+                                        <iframe id="JSiframe" width="352" height="612" style="border: 0px;"
                                             src="JavaScript work/Create Task_ Wordle/index.html"></iframe>
                                     </div>
                                 </div>
@@ -20371,7 +20418,7 @@
                         <!--$-->
                         <div id="comp-m0zmhku0" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m0zmhku0 wixui-rich-text"
                             data-testid="richTextElement" ariaattributes="[object Object]">
-                            <p id="desktopDesc" class="font_8 wixui-rich-text__text"><span style="font-size:31px;"
+                            <p id="JSdesktopDesc" class="font_8 wixui-rich-text__text"><span style="font-size:31px;"
                                     class="wixui-rich-text__text">This recreation of the online game Wordle was my
                                     submission to College Board for my AP Computer Science Principles Class.</span></p>
                         </div>
@@ -20379,7 +20426,7 @@
                         <!--$-->
                         <div id="comp-m1107zx3" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m1107zx3 wixui-rich-text"
                             data-testid="richTextElement" ariaattributes="[object Object]">
-                            <p id="ipadDesc" class="font_8 wixui-rich-text__text"><span style="font-size:29px;"
+                            <p id="JSipadDesc" class="font_8 wixui-rich-text__text"><span style="font-size:29px;"
                                     class="wixui-rich-text__text">This recreation of the online game Wordle was my
                                     submission to College Board for my AP Computer Science Principles Class.</span></p>
                         </div>
@@ -20387,7 +20434,7 @@
                         <!--$-->
                         <div id="comp-m11083k9" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m11083k9 wixui-rich-text"
                             data-testid="richTextElement" ariaattributes="[object Object]">
-                            <p id="phoneDesc" class="font_8 wixui-rich-text__text"><span style="font-size:25px;"
+                            <p id="JSphoneDesc" class="font_8 wixui-rich-text__text"><span style="font-size:25px;"
                                     class="wixui-rich-text__text">This recreation of the online game Wordle was my
                                     submission to College Board for my AP Computer Science Principles Class.</span></p>
                         </div>
@@ -20395,7 +20442,7 @@
                         <!--$-->
                         <div id="comp-lu03ezjh" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lu03ezjh wixui-rich-text"
                             data-testid="richTextElement" ariaattributes="[object Object]">
-                            <h2 class="font_2 wixui-rich-text__text"><span id="TITLE" class="wixui-rich-text__text">Wordle</span>
+                            <h2 class="font_2 wixui-rich-text__text"><span id="JSTITLE" class="wixui-rich-text__text">Wordle</span>
                             </h2>
                         </div>
                         <!--/$-->
@@ -20419,7 +20466,7 @@
                         <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
                         <div id="bgMedia_comp-m16km628" data-motion-part="BG_MEDIA comp-m16km628" class="VgO9Yg"></div>
                     </div>
-                    <!--$-->
+                    <!--GGGG$-->
                     <div id="comp-m16km63n" role=""
                         class="rM7ckN YJEKQk comp-m16km63n-container comp-m16km63n wixui-box">
                         <div class="YAf4Ti RedBackground wixui-box"></div>
@@ -20427,59 +20474,118 @@
                         <div id="comp-m16km63w" class="comp-m16km63w" style="height:auto">
                             <div class="RichContentViewer2447840476__root wixui-rich-content-viewer" style="background-color:rgb(var(--bgColor, var(--color_11)), var(--alpha-bgColor, 1));border-radius:var(--borderRadius, 0);border:calc(1px * var(--borderWidth, 0)) solid rgb(var(--borderColor, var(--color_15)), var(--alpha-borderColor, 0.7));padding:calc(1px * var(--verticalPadding, 0)) calc(1px * var(--horizontalPadding, 0))">
                                 <!--JAVA CODE GOES HERE-->
+                                <div class="_4Ub0k" style="height: 624px; max-height: 624px;" data-hook="HtmlComponent">
+                                    <div class="full_container" style="margin-top: 30px;">
+                                        <iframe id="JAVAiframe" frameborder="0" width="100%" height="600px" src="https://www.online-java.com/2pZKj14e35?embed=true"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="comp-lu03ezjj5" class="comp-lu03ezjj5" style="height:auto">
+                            <div class="RichContentViewer2447840476__root wixui-rich-content-viewer"
+                                style="background-color:rgb(var(--bgColor, var(--color_11)), var(--alpha-bgColor, 1));border-radius:var(--borderRadius, 0);border:calc(1px * var(--borderWidth, 0)) solid rgb(var(--borderColor, var(--color_15)), var(--alpha-borderColor, 0.7));padding:calc(1px * var(--verticalPadding, 0)) calc(1px * var(--horizontalPadding, 0))">
+                                <
                             </div>
                         </div>
                         <!--/$-->
                         <!--$-->
-                        <div id="comp-m17yv1lo" class="comp-m17yv1lo" data-semantic-classname="button"><button
-                                type="button" disabled=""
-                                class="StylableButton2545352419__root StylableButton2545352419--disabled style-m17yv1lt1__root wixui-button"
-                                data-testid="buttonContent" aria-label="Send"><span
-                                    class="StylableButton2545352419__container"><span
-                                        class="StylableButton2545352419__label wixui-button__label"
-                                        data-testid="stylablebutton-label">Send</span><span
+                        <div id="comp-lu061zi8" role=""
+                            class="rM7ckN YJEKQk comp-lu061zi8-container comp-lu061zi8 wixui-box">
+                            <div class="nexts2">
+                                <a id="JAVAback" href="#/" onclick="JAVAback_click()" class="active">
+                                    <span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"data-testid="stylablebutton-icon">
+                                        <span>
+                                            <svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="400"xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                            <g transform="scale(-1,1) translate(-180,0)">
+                                                <path
+                                                    d="M20.5 21.5l159 78.5-159 78.5v-157z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    </button>
+                                </span></a>
+                            </div>
+                            <div class="pagination2" style="margin-left: 25px;margin-right: 25px;">
+                                <a id="JAVApag1" href="#/" onclick="JAVApag1()" class="active"><span
                                         class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
-                                        data-testid="stylablebutton-icon"><span><svg data-bbox="20.5 21.5 159 157"
-                                                viewBox="0 0 200 200" height="200" width="200"
+                                        data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
+                                                viewBox="0 0 200 200" height="200" width="150"
                                                 xmlns="http://www.w3.org/2000/svg" data-type="shape">
                                                 <g>
-                                                    <path d="M20.5 21.5l159 78.5-159 78.5v-157z"></path>
+                                                    <path
+                                                        d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                                                    </path>
                                                 </g>
                                             </svg>
-                                        </span></span></span></button></div>
-                        <!--/$-->
-                        <!--$-->
-                        <div id="comp-m17yuw1c" class="comp-m17yuw1c" data-semantic-classname="button"><button
-                                type="button" class="StylableButton2545352419__root style-m17yuw1o2__root wixui-button"
-                                data-testid="buttonContent" aria-label="Send"><span
-                                    class="StylableButton2545352419__container"><span
-                                        class="StylableButton2545352419__label wixui-button__label"
-                                        data-testid="stylablebutton-label">Send</span><span
+                                        </span>
+                                        </button>
+                                    </span></a>
+                                <a id="JAVApag2" href="#/" onclick="JAVApag2()" class="a"><span
                                         class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
-                                        data-testid="stylablebutton-icon"><span><svg data-bbox="20.5 21.5 159 157"
-                                                viewBox="0 0 200 200" height="200" width="200"
+                                        data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
+                                                viewBox="0 0 200 200" height="200" width="150"
                                                 xmlns="http://www.w3.org/2000/svg" data-type="shape">
                                                 <g>
-                                                    <path d="M20.5 21.5l159 78.5-159 78.5v-157z"></path>
+                                                    <path
+                                                        d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                                                    </path>
                                                 </g>
                                             </svg>
-                                        </span></span></span></button></div>
-                        <!--/$-->
-                        <!--$-->
-                        <div id="comp-m16km64j" role=""
-                            class="rM7ckN YJEKQk comp-m16km64j-container comp-m16km64j wixui-box">
-                            <div class="YAf4Ti RedBackground wixui-box"></div>
-                            <!--$-->
-                            <div id="comp-m16km64s" class="comp-m16km64s" data-semantic-classname="button"><button
-                                    type="button" disabled=""
-                                    class="StylableButton2545352419__root StylableButton2545352419--disabled style-m16km64w4__root wixui-button"
-                                    data-testid="buttonContent" aria-label="page 1"><span
-                                        class="StylableButton2545352419__container"><span
-                                            class="StylableButton2545352419__label wixui-button__label"
-                                            data-testid="stylablebutton-label">page 1</span><span
+                                        </span></span></a>
+                                <a id="JAVApag3" href="#/" onclick="JAVApag3()" class="a"><span
+                                        class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
+                                        data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
+                                                viewBox="0 0 200 200" height="200" width="150"
+                                                xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                                <g>
+                                                    <path
+                                                        d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </span></span></a>
+                                <a id="JAVApag4" href="#/" onclick="JAVApag4()" class="a"><span
+                                        class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
+                                        data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
+                                                viewBox="0 0 200 200" height="200" width="150"
+                                                xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                                <g>
+                                                    <path
+                                                        d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </span></span></a>
+                                <a id="JAVApag5" href="#/" onclick="JAVApag5()" class="a"><span
+                                        class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
+                                        data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
+                                                viewBox="0 0 200 200" height="200" width="150"
+                                                xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                                <g>
+                                                    <path
+                                                        d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </span></span></a>
+                                <a id="JAVApag6" href="#/" onclick="JAVApag6()" class="a"><span
+                                        class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
+                                        data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
+                                                viewBox="0 0 200 200" height="200" width="150"
+                                                xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                                <g>
+                                                    <path
+                                                        d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </span></span></a>
+                                        <a id="JAVApag7" href="#/" onclick="JAVApag7()" class="a"><span
                                             class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
                                             data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
-                                                    viewBox="0 0 200 200" height="200" width="200"
+                                                    viewBox="0 0 200 200" height="200" width="150"
                                                     xmlns="http://www.w3.org/2000/svg" data-type="shape">
                                                     <g>
                                                         <path
@@ -20487,127 +20593,25 @@
                                                         </path>
                                                     </g>
                                                 </svg>
-                                            </span></span></span></button></div>
+                                            </span></span></a>
+                            </div>
+                            <div class="nexts">
+                                <a id="JAVAnext" href="#/" onclick="JAVAnext_click()" class="a">
+                                    <span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"data-testid="stylablebutton-icon">
+                                        <span>
+                                            <svg data-bbox="20 20 160 160" viewBox="0 0 200 200" height="200" width="400"xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                            <g>
+                                                <path
+                                                    d="M20.5 21.5l159 78.5-159 78.5v-157z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    </button>
+                                </span></a>
+                            </div>
                             <!--/$-->
-                            <!--$-->
-                            <div id="comp-m16km64y" class="comp-m16km64y" data-semantic-classname="button"><button
-                                    type="button"
-                                    class="StylableButton2545352419__root style-m16km6532__root wixui-button"
-                                    data-testid="buttonContent" aria-label="page 2"><span
-                                        class="StylableButton2545352419__container"><span
-                                            class="StylableButton2545352419__label wixui-button__label"
-                                            data-testid="stylablebutton-label">page 2</span><span
-                                            class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
-                                            data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
-                                                    viewBox="0 0 200 200" height="200" width="200"
-                                                    xmlns="http://www.w3.org/2000/svg" data-type="shape">
-                                                    <g>
-                                                        <path
-                                                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                            </span></span></span></button></div>
-                            <!--/$-->
-                            <!--$-->
-                            <div id="comp-m16km655" class="comp-m16km655" data-semantic-classname="button"><button
-                                    type="button"
-                                    class="StylableButton2545352419__root style-m16km65a6__root wixui-button"
-                                    data-testid="buttonContent" aria-label="page 3"><span
-                                        class="StylableButton2545352419__container"><span
-                                            class="StylableButton2545352419__label wixui-button__label"
-                                            data-testid="stylablebutton-label">page 3</span><span
-                                            class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
-                                            data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
-                                                    viewBox="0 0 200 200" height="200" width="200"
-                                                    xmlns="http://www.w3.org/2000/svg" data-type="shape">
-                                                    <g>
-                                                        <path
-                                                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                            </span></span></span></button></div>
-                            <!--/$-->
-                            <!--$-->
-                            <div id="comp-m16km65c" class="comp-m16km65c" data-semantic-classname="button"><button
-                                    type="button"
-                                    class="StylableButton2545352419__root style-m16km65i1__root wixui-button"
-                                    data-testid="buttonContent" aria-label="page 4"><span
-                                        class="StylableButton2545352419__container"><span
-                                            class="StylableButton2545352419__label wixui-button__label"
-                                            data-testid="stylablebutton-label">page 4</span><span
-                                            class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
-                                            data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
-                                                    viewBox="0 0 200 200" height="200" width="200"
-                                                    xmlns="http://www.w3.org/2000/svg" data-type="shape">
-                                                    <g>
-                                                        <path
-                                                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                            </span></span></span></button></div>
-                            <!--/$-->
-                            <!--$-->
-                            <div id="comp-m16km65k" class="comp-m16km65k" data-semantic-classname="button"><button
-                                    type="button"
-                                    class="StylableButton2545352419__root style-m16km65u1__root wixui-button"
-                                    data-testid="buttonContent" aria-label="Page 5"><span
-                                        class="StylableButton2545352419__container"><span
-                                            class="StylableButton2545352419__label wixui-button__label"
-                                            data-testid="stylablebutton-label">Page 5</span><span
-                                            class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
-                                            data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
-                                                    viewBox="0 0 200 200" height="200" width="200"
-                                                    xmlns="http://www.w3.org/2000/svg" data-type="shape">
-                                                    <g>
-                                                        <path
-                                                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                            </span></span></span></button></div>
-                            <!--/$-->
-                            <!--$-->
-                            <div id="comp-m16km65u5" class="comp-m16km65u5" data-semantic-classname="button"><button
-                                    type="button"
-                                    class="StylableButton2545352419__root style-m16km65y7__root wixui-button"
-                                    data-testid="buttonContent" aria-label="page 6"><span
-                                        class="StylableButton2545352419__container"><span
-                                            class="StylableButton2545352419__label wixui-button__label"
-                                            data-testid="stylablebutton-label">page 6</span><span
-                                            class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
-                                            data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
-                                                    viewBox="0 0 200 200" height="200" width="200"
-                                                    xmlns="http://www.w3.org/2000/svg" data-type="shape">
-                                                    <g>
-                                                        <path
-                                                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                            </span></span></span></button></div>
-                            <!--/$-->
-                            <!--$-->
-                            <div id="comp-m17c9vf1" class="comp-m17c9vf1" data-semantic-classname="button"><button
-                                    type="button"
-                                    class="StylableButton2545352419__root style-m17c9vfl4__root wixui-button"
-                                    data-testid="buttonContent" aria-label="page 6"><span
-                                        class="StylableButton2545352419__container"><span
-                                            class="StylableButton2545352419__label wixui-button__label"
-                                            data-testid="stylablebutton-label">page 6</span><span
-                                            class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true"
-                                            data-testid="stylablebutton-icon"><span><svg data-bbox="20 20 160 160"
-                                                    viewBox="0 0 200 200" height="200" width="200"
-                                                    xmlns="http://www.w3.org/2000/svg" data-type="shape">
-                                                    <g>
-                                                        <path
-                                                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                            </span></span></span></button></div>
+                            <!--NOTE2@()@$-->
                             <!--/$-->
                         </div>
                         <!--/$-->
@@ -20615,7 +20619,7 @@
                         <div id="comp-m16km65z1"
                             class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m16km65z1 wixui-rich-text"
                             data-testid="richTextElement" ariaattributes="[object Object]">
-                            <p class="font_8 wixui-rich-text__text"><span class="wixui-rich-text__text">I created this
+                            <p id="JAVAdesktopDesc"class="font_8 wixui-rich-text__text"><span class="wixui-rich-text__text"> DDI created this
                                     as just some demo app of a Sandwich shop simulator for fun one day and worked on it
                                     for a while during my CSA class.</span></p>
                         </div>
@@ -20623,7 +20627,7 @@
                         <!--$-->
                         <div id="comp-m16km668" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m16km668 wixui-rich-text"
                             data-testid="richTextElement" ariaattributes="[object Object]">
-                            <p class="font_8 wixui-rich-text__text"><span class="wixui-rich-text__text">I created this
+                            <p id="JAVAipadDesc" class="font_8 wixui-rich-text__text"><span class="wixui-rich-text__text">IPI created this
                                     as just some demo app of a Sandwich shop simulator for fun one day and worked on it
                                     for a while during my CSA class.</span></p>
                         </div>
@@ -20631,7 +20635,7 @@
                         <!--$-->
                         <div id="comp-m16km66c" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m16km66c wixui-rich-text"
                             data-testid="richTextElement" ariaattributes="[object Object]">
-                            <p class="font_8 wixui-rich-text__text"><span class="wixui-rich-text__text">I created this
+                            <p id="JAVAphoneDesc" class="font_8 wixui-rich-text__text"><span class="wixui-rich-text__text">PPI created this
                                     as just some demo app of a Sandwich shop simulator for fun one day and worked on it
                                     for a while during my CSA class.</span></p>
                         </div>
@@ -20640,7 +20644,7 @@
                         <div id="comp-m16km66h2"
                             class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m16km66h2 wixui-rich-text"
                             data-testid="richTextElement" ariaattributes="[object Object]">
-                            <h2 class="font_2 wixui-rich-text__text"><span class="wixui-rich-text__text">Shop
+                            <h2 class="font_2 wixui-rich-text__text"><span id="JAVATITLE" class="wixui-rich-text__text">Shop
                                     Simulator</span></h2>
                         </div>
                         <!--/$-->
@@ -20649,7 +20653,7 @@
                     <!--$-->
                     <div id="comp-m16km66n" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m16km66n wixui-rich-text"
                         data-testid="richTextElement" ariaattributes="[object Object]">
-                        <h2 class="font_2 wixui-rich-text__text"><span class="wixui-rich-text__text">Will Hold Java Code</span></h2>
+                        <h2 class="font_2 wixui-rich-text__text"><span class="wixui-rich-text__text">Java</span></h2>
                     </div>
                     <!--/$-->
                 </section>
@@ -20661,7 +20665,7 @@
                     class="xuzjBY comp-lmu67b1b_r_comp-kbgakgyt-container comp-lmu67b1b_r_comp-kbgakgyt wixui-footer undefined"
                     data-testid="section-container">
                     <!--$-->
-                    <div id="comp-lmu67b1b_r_comp-kd5pdf7t"
+                    <div id="comp-lmu67b1b_r_comp-kd5pdf7t" style="display: none;"
                         class="HcOXKn SxM0TO QxJLC3 lq2cno YQcXTT comp-lmu67b1b_r_comp-kd5pdf7t wixui-rich-text"
                         data-testid="richTextElement" ariaattributes="[object Object]">
                         <p class="font_8 wixui-rich-text__text">© 2023 by Name of Site. Created on <a
