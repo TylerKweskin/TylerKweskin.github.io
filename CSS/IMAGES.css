@@ -1,0 +1,382 @@
+
+.AKxYR5,
+.AKxYR5 svg {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.AKxYR5 svg {
+    height: var(--svg-calculated-height, 100%);
+    margin: auto;
+    padding: var(--svg-calculated-padding, 0);
+    width: var(--svg-calculated-width, 100%);
+}
+
+.AKxYR5 svg:not([data-type=ugc]) {
+    overflow: visible;
+}
+
+.VZYmYf * {
+    vector-effect: non-scaling-stroke;
+}
+
+.HlRz5e,
+.I5zqsT {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.HlRz5e img {
+    max-width: var(--wix-img-max-width, 100%);
+}
+
+.HlRz5e[data-animate-blur] img {
+    filter: blur(9px);
+    transition: filter .8s ease-in;
+}
+
+HlRz5e[data-animate-blur] img[data-load-done] {
+    filter: none;
+}
+
+.WzbAF8 .mpGTIt .O6KwRn {
+    display: var(--item-display);
+    height: var(--item-size);
+    margin: var(--item-margin);
+    width: var(--item-size);
+}
+
+.WzbAF8 .mpGTIt .O6KwRn:last-child {
+    margin: 0;
+}
+
+.WzbAF8 .mpGTIt .O6KwRn .oRtuWN {
+    display: block;
+}
+
+.WzbAF8 .mpGTIt .O6KwRn .oRtuWN .YaS0jR {
+    height: var(--item-size);
+    width: var(--item-size);
+}
+
+.WzbAF8 .mpGTIt {
+    height: 100%;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+}
+
+:host(.device-mobile-optimized) .WzbAF8 .mpGTIt,
+body.device-mobile-optimized .WzbAF8 .mpGTIt {
+    white-space: normal;
+}
+
+/* Text and Rich Text */
+
+.HcOXKn {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+ol.font_100,
+ul.font_100 {
+    color: #080808;
+    font-family: "Arial, Helvetica, sans-serif", serif;
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: normal;
+    margin: 0;
+    text-decoration: none;
+}
+
+ol.font_100 li,
+ul.font_100 li {
+    margin-bottom: 12px;
+}
+
+ol.wix-list-text-align,
+ul.wix-list-text-align {
+    list-style-position: inside;
+}
+
+ol.wix-list-text-align h1,
+ol.wix-list-text-align h2,
+ol.wix-list-text-align h3,
+ol.wix-list-text-align h4,
+ol.wix-list-text-align h5,
+ol.wix-list-text-align h6 ul.wix-list-text-align h2,
+ul.wix-list-text-align h3,
+ul.wix-list-text-align h4,
+ul.wix-list-text-align h5,
+ul.wix-list-text-align h6,
+ul.wix-list-text-align p {
+    display: inline;
+}
+
+.QxJLC3 [data-attr-richtext-marker=true] {
+    display: block;
+}
+
+.QxJLC3 [data-attr-richtext-marker=true] table {
+    border-collapse: collapse;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.QxJLC3 [data-attr-richtext-marker=true] table td {
+    padding: 12px;
+    position: relative;
+}
+
+.QxJLC3 [data-attr-richtext-marker=true] table td:after {
+    border-bottom: 1px solid currentColor;
+    border-left: 1px solid currentColor;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: .2;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.QxJLC3 [data-attr-richtext-marker=true] table tr td:last-child:after {
+    border-right: 1px solid currentColor;
+}
+
+.QxJLC3 [data-attr-richtext-marker=true] table tr:first-child td:after {
+    border-top: 1px solid currentColor;
+}
+
+@supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .lq2cno>*>:first-child {
+        vertical-align: top;
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    .lq2cno>*>:first-child {
+        vertical-align: top;
+    }
+}
+
+.agLt0N :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) [class$=rich-text__text],
+.agLt0N :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote)[class$=rich-text__text] {
+    color: var(--corvid-color, currentColor);
+}
+
+.agLt0N :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) span[style*=color] {
+    color: var(--corvid-color, currentColor) !important;
+}
+
+.uGVkMG,
+.nJYhU3,
+.SxM0TO,
+.c9GqVL {
+    direction: var(--text-direction);
+    min-height: var(--min-height);
+    min-width: var(--min-width);
+}
+
+.uGVkMG .edKzOf,
+.nJYhU3 .edKzOf,
+.SxM0TO,
+.c9GqVL {
+    word-wrap: break-word;
+    height: 100%;
+    overflow-wrap: break-word;
+    position: relative;
+    width: 100%;
+}
+
+.uGVkMG .edKzOf ul {
+    list-style: disc inside;
+}
+
+.uGVkMG .edKzOf li {
+    margin-bottom: 12px;
+}
+
+.SxM0TO blockquote,
+.SxM0TO h1,
+.SxM0TO h2,
+.SxM0TO h3,
+.SxM0TO h4,
+.SxM0TO h5,
+.SxM0TO h6,
+.SxM0TO p {
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.nJYhU3 .edKzOf ol,
+.nJYhU3 .edKzOf ul {
+    letter-spacing: normal;
+    line-height: normal;
+    margin-inline-start: .5em;
+    padding-inline-start: 1.3em;
+}
+
+.nJYhU3 .edKzOf ul {
+    list-style-type: disc;
+}
+
+.nJYhU3 .edKzOf ol {
+    list-style-type: decimal;
+}
+
+.nJYhU3 .edKzOf ol ul,
+.nJYhU3 .edKzOf ul ul {
+    line-height: normal;
+    list-style-type: circle;
+}
+
+.nJYhU3 .edKzOf ol ol ul,
+.nJYhU3 .edKzOf ol ul ul,
+.nJYhU3 .edKzOf ul ol ul,
+.nJYhU3 .edKzOf ul ul ul {
+    line-height: normal;
+    list-style-type: square;
+}
+
+.nJYhU3 .edKzOf li {
+    font-style: inherit;
+    font-weight: inherit;
+    letter-spacing: normal;
+    line-height: inherit;
+}
+
+.nJYhU3 .edKzOf h1,
+.nJYhU3 .edKzOf h2,
+.nJYhU3 .edKzOf h3,
+.nJYhU3 .edKzOf h4,
+.nJYhU3 .edKzOf h5,
+.nJYhU3 .edKzOf h6,
+.nJYhU3 .edKzOf p {
+    letter-spacing: normal;
+    line-height: normal;
+    margin-block: 0;
+    margin: 0;
+}
+
+.nJYhU3 .edKzOf a {
+    color: inherit;
+}
+
+.SxM0TO,
+.c9GqVL {
+    word-wrap: break-word;
+    direction: var(--text-direction);
+    min-height: var(--min-height);
+    min-width: var(--min-width);
+    mix-blend-mode: var(--blendMode, normal);
+    overflow-wrap: break-word;
+    pointer-events: none;
+    text-align: start;
+    text-shadow: var(--textOutline, 0 0 transparent), var(--textShadow, 0 0 transparent);
+    text-transform: var(--textTransform, "none");
+}
+
+.SxM0TO>*,
+.c9GqVL>* {
+    pointer-events: auto;
+}
+
+.SxM0TO li,
+.c9GqVL li {
+    font-style: inherit;
+    font-weight: inherit;
+    letter-spacing: normal;
+    line-height: inherit;
+}
+
+.SxM0TO ol,
+.SxM0TO ul,
+.c9GqVL ol,
+.c9GqVL ul {
+    letter-spacing: normal;
+    line-height: normal;
+    margin-inline-end: 0;
+    margin-inline-start: .5em;
+}
+
+.SxM0TO:not(.YQcXTT) ol,
+.SxM0TO:not(.YQcXTT) ul,
+.c9GqVL:not(.YQcXTT) ol,
+.c9GqVL:not(.YQcXTT) ul {
+    padding-inline-end: 0;
+    padding-inline-start: 1.3em;
+}
+
+.SxM0TO ul,
+.c9GqVL ul {
+    list-style-type: disc;
+}
+
+.SxM0TO ol,
+.c9GqVL ol {
+    list-style-type: decimal;
+}
+
+.SxM0TO ol ul,
+.SxM0TO ul ul,
+.c9GqVL ol ul,
+.c9GqVL ul ul {
+    list-style-type: circle;
+}
+
+.SxM0TO ol ol ul,
+.SxM0TO ol ul ul,
+.SxM0TO ul ol ul,
+.SxM0TO ul ul ul,
+.c9GqVL ol ol ul,
+.c9GqVL ol ul ul,
+.c9GqVL ul ol ul,
+.c9GqVL ul ul ul {
+    list-style-type: square;
+}
+
+.SxM0TO blockquote,
+.SxM0TO h1,
+.SxM0TO h2,
+.SxM0TO h3,
+.SxM0TO h4,
+.SxM0TO h5,
+.SxM0TO h6,
+.SxM0TO p,
+.c9GqVL blockquote,
+.c9GqVL h1,
+.c9GqVL h2,
+.c9GqVL h3,
+.c9GqVL h4,
+.c9GqVL h5,
+.c9GqVL h6,
+.c9GqVL p {
+    margin-block: 0;
+    margin: 0;
+}
+
+.SxM0TO a,
+.c9GqVL a {
+    color: inherit;
+}
+
+.YQcXTT li {
+    margin-inline-end: 0;
+    margin-inline-start: 1.3em;
+}
+
+.Vd6aQZ {
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}

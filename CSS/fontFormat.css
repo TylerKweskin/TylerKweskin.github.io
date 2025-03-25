@@ -1,0 +1,458 @@
+#h32j2 {
+    --shc-mutated-brightness: 22, 22, 22;
+    justify-self: unset;
+}
+
+#comp-lmu67ay0_r_comp-kbgajy18 {
+    --bg-overlay-color: transparent;
+    --bg-gradient: none;
+    --inherit-transition: var(--transition, none);
+}
+
+#comp-lmu67ay0_r_comp-kd5peeyu {
+    --menuTotalBordersY: 0px;
+    --menuTotalBordersX: 0px;
+}
+
+#comp-lmu67ay0_r_comp-kkmqi5lg {
+    --fill-opacity: 1;
+    --stroke-width: 0;
+    --stroke: #5E97FF;
+    --stroke-opacity: 1;
+    --fill: #CCCCCC;
+}
+
+#comp-lmu67ay0_r_comp-lmusif8t {
+    --shc-mutated-brightness: 55, 27, 27;
+}
+
+#comp-lmu67ay0_r_comp-kd5pcdw0 {
+    --opacity: 1;
+}
+
+#comp-lmu67ay0_r_comp-lmskkc07 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    font-size: 28px;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+}
+
+#comp-lmu67awj3 {
+    --bg-overlay-color: transparent;
+    --bg-gradient: none;
+    --divider-bottom-image: none;
+    --divider-bottom-layers-y: 0px;
+    --divider-bottom-layers-x: 0px;
+    --inherit-transition: var(--transition, none);
+}
+
+#comp-lmu6tn4b {
+    writing-mode: horizontal-tb;
+}
+
+#comp-lmu6tn4b :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: #CCCCCC;
+    background-color: transparent;
+    font-size: 141.32292177304592px;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0em;
+    line-height: normal;
+    writing-mode: horizontal-tb;
+}
+
+#comp-lmu6tn4b [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: var(--corvid-color, #CCCCCC);
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    #comp-lmu6tn4b :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 133px !important;
+    }
+
+    #comp-lmu6tn4b [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        color: var(--corvid-color, #CCCCCC !important);
+    }
+}
+
+#comp-m17e3u5l {
+    writing-mode: horizontal-tb;
+}
+
+#comp-m17e3u5l :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: #F7F7F7;
+    background-color: transparent;
+    font-size: 141.32292177304592px;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0em;
+    line-height: normal;
+    writing-mode: horizontal-tb;
+}
+
+#comp-m17e3u5l [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: var(--corvid-color, #F7F7F7);
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    #comp-m17e3u5l :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 133px !important;
+    }
+
+    #comp-m17e3u5l [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        color: var(--corvid-color, #F7F7F7 !important);
+    }
+}
+
+#comp-lmu6t6yi {
+    --bg-overlay-color: rgb(var(--color_11));
+    --bg-gradient: none;
+    --inherit-transition: var(--transition, none);
+}
+
+#comp-lu03ezjc {
+    --shc-mutated-brightness: 55, 27, 27;
+}
+
+#comp-lu03ezjj5 {
+    --font_0-family: poppins-semibold, poppins, sans-serif;
+    --font_0-size: 88;
+    --font_0-style: normal;
+    --font_0-weight: normal;
+    --font_1-family: din-next-w01-light, sans-serif;
+    --font_1-size: 16;
+    --font_1-style: normal;
+    --font_1-weight: normal;
+    --font_2-family: poppins-semibold, poppins, sans-serif;
+    --font_2-size: 72;
+    --font_2-style: normal;
+    --font_2-weight: normal;
+    --font_3-family: poppins-semibold, poppins, sans-serif;
+    --font_3-size: 50;
+    --font_3-style: normal;
+    --font_3-weight: normal;
+    --font_4-family: poppins-semibold, poppins, sans-serif;
+    --font_4-size: 40;
+    --font_4-style: normal;
+    --font_4-weight: normal;
+    --font_5-family: poppins-semibold, poppins, sans-serif;
+    --font_5-size: 28;
+    --font_5-style: normal;
+    --font_5-weight: normal;
+    --font_6-family: poppins-semibold, poppins, sans-serif;
+    --font_6-size: 22;
+    --font_6-style: normal;
+    --font_6-weight: normal;
+    --font_7-family: avenir-lt-w01_35-light1475496, sans-serif;
+    --font_7-size: 18;
+    --font_7-style: normal;
+    --font_7-weight: normal;
+    --font_8-family: avenir-lt-w01_35-light1475496, sans-serif;
+    --font_8-size: 15;
+    --font_8-style: normal;
+    --font_8-weight: normal;
+    --font_9-family: avenir-lt-w01_35-light1475496, sans-serif;
+    --font_9-size: 14;
+    --font_9-style: normal;
+    --font_9-weight: normal;
+    --font_10-family: din-next-w01-light, sans-serif;
+    --font_10-size: 12;
+    --font_10-style: normal;
+    --font_10-weight: normal;
+}
+
+#comp-lu061zi8 {
+    --shc-mutated-brightness: 22, 22, 22;
+}
+
+#comp-m0zmhku0 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-size: 31.25510729698352px;
+    letter-spacing: 0em;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1198px) {
+    #comp-m0zmhku0 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 29.156646504937804px !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    #comp-m0zmhku0 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 25px !important;
+    }
+}
+
+#comp-m1107zx3 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-size: 31.25510729698352px;
+    letter-spacing: 0em;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1198px) {
+    #comp-m1107zx3 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 29.156646504937804px !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    #comp-m1107zx3 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 25px !important;
+    }
+}
+
+#comp-m11083k9 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-size: 31.25510729698352px;
+    letter-spacing: 0em;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1198px) {
+    #comp-m11083k9 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 29.156646504937804px !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    #comp-m11083k9 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 25px !important;
+    }
+}
+
+#comp-lu03ezjh :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+}
+
+#comp-lmwzt574 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: #CCCCCC;
+    background-color: transparent;
+    font-size: max(54px, max(0.5px, 0.042816 * (var(--scaling-factor) - var(--scrollbar-width))));
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0em;
+    line-height: normal;
+}
+
+#comp-lmwzt574 [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: var(--corvid-color, #CCCCCC);
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    #comp-lmwzt574 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        color: #D1D1D1 !important;
+    }
+
+    #comp-lmwzt574 [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        color: var(--corvid-color, #D1D1D1 !important);
+    }
+}
+
+#comp-lmu67b1b_r_comp-kbgakgyt {
+    --bg-overlay-color: transparent;
+    --bg-gradient: none;
+}
+
+#comp-lmu67b1b_r_comp-kd5pdf7t :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: #CCCCCC;
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0em;
+    line-height: 1.6;
+}
+
+#comp-lmu67b1b_r_comp-kd5pdf7t [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: var(--corvid-color, #CCCCCC);
+}
+
+#comp-lmu67b3y_r_comp-kd5px9hr {
+    --screen-width: 100vw;
+}
+
+#comp-lmu67b3y_r_comp-kd5px9kk {
+    height: auto;
+    --direction: rtl;
+    --item-height: 56px;
+    --text-align: center;
+    --template-columns: calc(40px + 1em) 1fr calc(40px + 1em);
+    --label-grid-column: 2;
+    --arrow-grid-column: 3;
+    --padding-left: 0px;
+    --sub-padding-left: 0px;
+    --padding-right: 0px;
+    --sub-padding-right: 0px;
+}
+
+#comp-lmu67b3y_r_comp-kkmqi5tc {
+    --fill-opacity: 1;
+    --stroke-width: 0;
+    --stroke: #ED1566;
+    --stroke-opacity: 1;
+    --fill: #CCCCCC;
+}
+
+#comp-m16km628 {
+    --bg-overlay-color: rgb(var(--color_11));
+    --bg-gradient: none;
+    --inherit-transition: var(--transition, none);
+}
+
+#comp-m16km63n {
+    --shc-mutated-brightness: 55, 27, 27;
+}
+
+#comp-m16km63w {
+    --font_0-family: poppins-semibold, poppins, sans-serif;
+    --font_0-size: 88;
+    --font_0-style: normal;
+    --font_0-weight: normal;
+    --font_1-family: din-next-w01-light, sans-serif;
+    --font_1-size: 16;
+    --font_1-style: normal;
+    --font_1-weight: normal;
+    --font_2-family: poppins-semibold, poppins, sans-serif;
+    --font_2-size: 72;
+    --font_2-style: normal;
+    --font_2-weight: normal;
+    --font_3-family: poppins-semibold, poppins, sans-serif;
+    --font_3-size: 50;
+    --font_3-style: normal;
+    --font_3-weight: normal;
+    --font_4-family: poppins-semibold, poppins, sans-serif;
+    --font_4-size: 40;
+    --font_4-style: normal;
+    --font_4-weight: normal;
+    --font_5-family: poppins-semibold, poppins, sans-serif;
+    --font_5-size: 28;
+    --font_5-style: normal;
+    --font_5-weight: normal;
+    --font_6-family: poppins-semibold, poppins, sans-serif;
+    --font_6-size: 22;
+    --font_6-style: normal;
+    --font_6-weight: normal;
+    --font_7-family: avenir-lt-w01_35-light1475496, sans-serif;
+    --font_7-size: 18;
+    --font_7-style: normal;
+    --font_7-weight: normal;
+    --font_8-family: avenir-lt-w01_35-light1475496, sans-serif;
+    --font_8-size: 15;
+    --font_8-style: normal;
+    --font_8-weight: normal;
+    --font_9-family: avenir-lt-w01_35-light1475496, sans-serif;
+    --font_9-size: 14;
+    --font_9-style: normal;
+    --font_9-weight: normal;
+    --font_10-family: din-next-w01-light, sans-serif;
+    --font_10-size: 12;
+    --font_10-style: normal;
+    --font_10-weight: normal;
+}
+
+#comp-m16km64j {
+    --shc-mutated-brightness: 22, 22, 22;
+}
+
+#comp-m16km65z1 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-size: 29px;
+    letter-spacing: 0em;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1198px) {
+    #comp-m16km65z1 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 29.156646504937804px !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    #comp-m16km65z1 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 25px !important;
+    }
+}
+
+#comp-m16km668 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-size: 31.25510729698352px;
+    letter-spacing: 0em;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1198px) {
+    #comp-m16km668 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 29.156646504937804px !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    #comp-m16km668 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 25px !important;
+    }
+}
+
+#comp-m16km66c :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-size: 31.25510729698352px;
+    letter-spacing: 0em;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1198px) {
+    #comp-m16km66c :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 29.156646504937804px !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    #comp-m16km66c :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        font-size: 25px !important;
+    }
+}
+
+#comp-m16km66h2 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+}
+
+#comp-m16km66n :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: #CCCCCC;
+    background-color: transparent;
+    font-size: max(54px, max(0.5px, 0.042816 * (var(--scaling-factor) - var(--scrollbar-width))));
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0em;
+    line-height: normal;
+}
+
+#comp-m16km66n [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: var(--corvid-color, #CCCCCC);
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    #comp-m16km66n :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        color: #D1D1D1 !important;
+    }
+
+    #comp-m16km66n [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+        color: var(--corvid-color, #D1D1D1 !important);
+    }
+}
