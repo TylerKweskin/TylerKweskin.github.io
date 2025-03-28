@@ -5,7 +5,6 @@
     right: 0;
     top: 0;
 }
-/*test*/
 .laptopLogo svg {
     height: var(--svg-calculated-height, 100%);
     margin: auto;
