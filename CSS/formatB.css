@@ -17,14 +17,14 @@
     --container-display: grid;
 }
 
-#headerItemPadding {
+#headeritemspadding {
     min-width: 178.09375px;
     width: 53.6622084178499%;
     max-width: 529.109375px;
     align-self: center;
 }
 
-.headeritempadding-container {
+.headeritemspadding-container {
     box-sizing: border-box;
     display: var(--l_display, var(--container-display));
     grid-template-rows: 1fr;
@@ -34,7 +34,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 1000px) {
-    #headeritempadding {
+    #headeritemspadding {
         height: 73px;
         min-width: 178.09375px;
         width: 465.78796906693714px;
@@ -42,7 +42,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
-    #headeritempadding {
+    #headeritemspadding {
         height: 73px;
         min-width: 174.46875px;
         width: 23.737244897959183%;
@@ -51,7 +51,7 @@
 }
 
 /*IDK WHY BUT WITHOUT THIS WHITE LINES APPEAR*/
-#headeritempadding {
+#headeritemspadding {
     --brw: 0px;
     --bg: var(--color_16);
     --rd: 0px;
@@ -70,12 +70,11 @@
     display: var(--l_display, var(--display, block));
     margin-left: 20.59375px;
     margin-top: 10px;
-    margin-bottom: 0px;
     grid-area: 1/1/2/2;
     position: relative;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1000px) {
+@media screen and (min-width: 320px) {
     #logopadding {
         align-self: center;
         margin-left: 40px;
@@ -91,12 +90,11 @@
         margin-top: 0px;
     }
 }
-
 #logopadding {
     --static-spx: 1px;
 }
 
-#comp-lmu67ay0_r_comp-lmskkc07 {
+#namepadding {
     width: 68.1022498326062%;
     height: auto;
     --l_display: unset;
@@ -112,8 +110,10 @@
     position: relative;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1000px) {
-    #comp-lmu67ay0_r_comp-lmskkc07 {
+
+
+@media screen and (min-width: 320px) {
+    #namepadding {
         align-self: center;
         margin-right: -4.921248008656702%;
         margin-top: 0px;
@@ -121,7 +121,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
-    #comp-lmu67ay0_r_comp-lmskkc07 {
+    #namepadding {
         max-width: 138.9375px;
         align-self: start;
         margin-right: 11.159002458889542%;
@@ -129,7 +129,7 @@
     }
 }
 
-#comp-lmu67ay0_r_comp-lmskkc07 {
+#namepadding {
     --textAlign: left;
     --textDecoration: none;
     --fontSize: 28px;
