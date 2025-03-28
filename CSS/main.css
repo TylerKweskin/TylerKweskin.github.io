@@ -1,3 +1,29 @@
+.headerColor{
+    background-color: rgba(var(--bg, var(--color_11, 255, 255, 255)), var(--alpha-bg, 1));
+    /* Assumed color_11 is white */
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.RedBackground {
+    -webkit-backdrop-filter: var(--backdrop-filter, none);
+    backdrop-filter: var(--backdrop-filter, none);
+    background-color: var(--container-corvid-background-color, rgba(var(--bg, var(--color_11, color_11)), var(--alpha-bg, 1)));
+    background-image: var(--bg-gradient, none);
+    border: var(--container-corvid-border-width, var(--brw, 1px)) solid var(--container-corvid-border-color, rgba(var(--brd, var(--color_15, color_15)), var(--alpha-brd, 1)));
+    border-radius: var(--rd, 5px);
+    bottom: 0;
+    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
 .pagination {
     display: inline-block;
 }
@@ -98,120 +124,15 @@
     }
 }
 
-@keyframes slide-horizontal-new {
-    0% {
-        transform: translateX(100%);
-    }
-}
-
-@keyframes slide-horizontal-old {
-    80% {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes slide-vertical-new {
-    0% {
-        transform: translateY(-100%);
-    }
-}
-
-@keyframes slide-vertical-old {
-    80% {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-}
-
-@keyframes out-in-new {
-    0% {
-        opacity: 0;
-    }
-}
-
-@keyframes out-in-old {
-    to {
-        opacity: 0;
-    }
-}
-
-html[data-page-transition=SlideHorizontal]::view-transition-old(page-group) {
-    animation: slide-horizontal-old 0.6s cubic-bezier(0.83, 0, 0.17, 1) forwards;
-    mix-blend-mode: normal;
-}
-
-html[data-page-transition=SlideHorizontal]::view-transition-new(page-group) {
-    animation: slide-horizontal-new 0.6s cubic-bezier(0.83, 0, 0.17, 1) backwards;
-    mix-blend-mode: normal;
-}
-
-html[data-page-transition=SlideVertical]::view-transition-old(page-group) {
-    animation: slide-vertical-old 0.6s cubic-bezier(0.83, 0, 0.17, 1) forwards;
-    mix-blend-mode: normal;
-}
-
-html[data-page-transition=SlideVertical]::view-transition-new(page-group) {
-    animation: slide-vertical-new 0.6s cubic-bezier(0.83, 0, 0.17, 1) backwards;
-    mix-blend-mode: normal;
-}
-
-html[data-page-transition=OutIn]::view-transition-old(page-group) {
-    animation: out-in-old 0.35s cubic-bezier(0.64, 0, 0.78, 0) forwards;
-}
-
-html[data-page-transition=OutIn]::view-transition-new(page-group) {
-    animation: out-in-new 0.35s cubic-bezier(0.22, 1, 0.36, 1) 0.35s backwards;
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-    ::view-transition-group(*),
-    ::view-transition-new(*),
-    ::view-transition-old(*) {
-        animation: none !important;
-    }
-}
-
 body,
 html {
-    background: transparent;
+    background: rgb(48,44,44);
     border: 0;
     margin: 0;
     outline: 0;
     padding: 0;
-    vertical-align: baseline;
-    height: 100%;
 }
 
-body {
-    --scrollbar-width: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    overflow-x: auto;
-    overflow-y: scroll;
-}
-
-body:not(.responsive) #site-root {
-    min-width: var(--site-width);
-    width: 100%;
-}
-
-body:not([data-js-loaded]) [data-hide-prejs] {
-    visibility: hidden;
-}
-
-#SITE_CONTAINER {
-    position: relative;
-}
 
 :root {
     --one-unit: 1vw;
@@ -220,23 +141,4 @@ body:not([data-js-loaded]) [data-hide-prejs] {
     --spx-stopper-min: 0px;
 }
 
-@supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    :root {
-        --safari-sticky-fix: opacity;
-    }
-}
 
-@supports (container-type: inline-size) {
-    :root {
-        --one-unit: 1cqw;
-    }
-}
-
-[id^=oldHoverBox-] {
-    mix-blend-mode: plus-lighter;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-[data-mesh-id$=inlineContent-gridContainer]:has(>[id^=oldHoverBox-]) {
-    isolation: isolate;
-}
