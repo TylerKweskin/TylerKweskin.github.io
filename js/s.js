@@ -214,7 +214,7 @@ function JAVAnext_click(event) {
 function JAVAopacity(clicked) {
 	JAVAtextSize(clicked)
     document.getElementById("JAVApag"+clicked).className="active"
-	Jpaginum=clicked;
+	jPaginum=clicked;
 	if(clicked!=1){
 		document.getElementById("JAVAback").className="a"
 		for(var i=1;i<clicked;i++){
