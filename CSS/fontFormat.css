@@ -1,35 +1,4 @@
-#h32j2 {
-    --shc-mutated-brightness: 22, 22, 22;
-    justify-self: unset;
-}
-
-#comp-lmu67ay0_r_comp-kbgajy18 {
-    --bg-overlay-color: transparent;
-    --bg-gradient: none;
-    --inherit-transition: var(--transition, none);
-}
-
-#comp-lmu67ay0_r_comp-kd5peeyu {
-    --menuTotalBordersY: 0px;
-    --menuTotalBordersX: 0px;
-}
-
-#comp-lmu67ay0_r_comp-kkmqi5lg {
-    --fill-opacity: 1;
-    --stroke-width: 0;
-    --stroke: #5E97FF;
-    --stroke-opacity: 1;
-    --fill: #CCCCCC;
-}
-
-#comp-lmu67ay0_r_comp-lmusif8t {
-    --shc-mutated-brightness: 55, 27, 27;
-}
-
-#comp-lmu67ay0_r_comp-kd5pcdw0 {
-    --opacity: 1;
-}
-
+/*header Text*/
 #comp-lmu67ay0_r_comp-lmskkc07 :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
     font-size: 28px;
     font-style: normal;
@@ -37,19 +6,7 @@
     text-align: left;
 }
 
-#comp-lmu67awj3 {
-    --bg-overlay-color: transparent;
-    --bg-gradient: none;
-    --divider-bottom-image: none;
-    --divider-bottom-layers-y: 0px;
-    --divider-bottom-layers-x: 0px;
-    --inherit-transition: var(--transition, none);
-}
-
-#comp-lmu6tn4b {
-    writing-mode: horizontal-tb;
-}
-
+/*Programs 3d effect text*/
 #comp-lmu6tn4b :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
     color: #CCCCCC;
     background-color: transparent;
@@ -62,10 +19,7 @@
     writing-mode: horizontal-tb;
 }
 
-#comp-lmu6tn4b [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
-    color: var(--corvid-color, #CCCCCC);
-}
-
+/*Programs 3d effect on smallest screen*/
 @media screen and (min-width: 320px) and (max-width: 750px) {
     #comp-lmu6tn4b :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
         font-size: 133px !important;
@@ -76,10 +30,7 @@
     }
 }
 
-#comp-m17e3u5l {
-    writing-mode: horizontal-tb;
-}
-
+/*Programs main text*/
 #comp-m17e3u5l :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
     color: #F7F7F7;
     background-color: transparent;
@@ -92,10 +43,7 @@
     writing-mode: horizontal-tb;
 }
 
-#comp-m17e3u5l [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
-    color: var(--corvid-color, #F7F7F7);
-}
-
+/*Programs main text smallest*/
 @media screen and (min-width: 320px) and (max-width: 750px) {
     #comp-m17e3u5l :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
         font-size: 133px !important;
@@ -104,16 +52,6 @@
     #comp-m17e3u5l [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
         color: var(--corvid-color, #F7F7F7 !important);
     }
-}
-
-#comp-lmu6t6yi {
-    --bg-overlay-color: rgb(var(--color_11));
-    --bg-gradient: none;
-    --inherit-transition: var(--transition, none);
-}
-
-#comp-lu03ezjc {
-    --shc-mutated-brightness: 55, 27, 27;
 }
 
 #comp-lu03ezjj5 {
