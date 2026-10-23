@@ -1,15 +1,17 @@
-# Editing the portfolio
+# Tyler Kweskin's Portfolio
 
-Start with `index.html`. This is a plain HTML, CSS and JavaScript site, with no build step.
+My personal website, hosted at [tylerkweskin.github.io](https://tylerkweskin.github.io).
+
+Built with HTML, CSS and JavaScript. No framework or build step.
 
 ## Where things are
 
-| File | What to edit |
+| File | Contents |
 | --- | --- |
 | `index.html` | Homepage introduction and portrait |
 | `about.html` | Background, past work, interests and photo credit |
 | `projects.html` | Gallery and embedded project panels |
-| `resume.html` | Education, experience and résumé download link |
+| `resume.html` | Education, experience and résumé download |
 | `contact.html` | Contact details and email draft form |
 | `CSS/portfolio.css` | Shared colors, page layout, photo shadow and floating menu |
 | `CSS/site.css` | Project panel layout, gallery and vignette |
@@ -17,49 +19,52 @@ Start with `index.html`. This is a plain HTML, CSS and JavaScript site, with no 
 | `js/s.js` | Project names, descriptions, links and selection buttons |
 | `js/gallery.js` | Looping gallery |
 | `js/navigation.js` | Floating menu and social links |
-| `js/contact.js` | Opens the visitor’s email app with a draft |
+| `js/contact.js` | Opens an email draft with the form contents |
 | `js/project-entry.js` | Opens Wanderer when a link includes `?java=2` |
 | `assets/` | Photos, gallery images, fonts and icons |
 | `files/` | Downloadable résumé PDF |
-| `JavaScript work/` | Original games and the App Lab files they need |
-| `Alcohol-Label-Verification/` | Separate original project, kept for direct access |
+| `JavaScript work/` | Games and their App Lab files |
+| `Alcohol-Label-Verification/` | Separate label verification project |
 
-## Making changes
+## How it works
 
-Change page text between HTML tags. A link’s `href` is its destination; an image’s
-`src` is its file path. Keep image `alt` text descriptive.
+The five pages share the same header and footer, included directly in each HTML file.
+The floating menu copies the header links and appears when the top navigation scrolls
+out of view. Its panel slides over the hamburger button, with social links and an X
+to close it. Escape and clicking outside also close the menu.
 
-The header and footer are repeated in all five pages. Update each copy when changing
-those links or credits. The floating menu copies the header links automatically.
-Social profile links are in `js/navigation.js`, with additional links on About and Contact.
+The palette uses a darker, muted version of Monokai. Shared colors are defined as
+CSS variables in `CSS/portfolio.css`. The homepage portrait has an inset shadow,
+and the project gallery uses a gradient overlay to separate its edges from the
+page background.
 
-Start with the color variables at the top of `CSS/portfolio.css` to change the palette.
-CSS uses `.class` for a class and `#id` for an ID. Padding adds space inside a box;
-margin adds space outside it. Comments mark the main sections and useful settings.
+Project names, descriptions and links are stored in `js/s.js`. The numbered buttons
+and arrows change the selected iframe, title and description. The first project's
+starting text and frame are also included in `projects.html`. A few hidden description
+elements remain because the original script still writes to their IDs.
 
-The homepage portrait is `assets/portrait.jpg`. About uses
-`assets/about-unsplash-olena-bohovyk.jpeg`; its photographer credit is in `about.html`.
-The inset portrait shadow is near the bottom of `CSS/portfolio.css`.
+The JavaScript games run from `JavaScript work/`. Their App Lab folders contain
+the runtime code, fonts and images they use. The Java demos run through embedded
+Online Java pages and require an internet connection.
 
-Project names, descriptions and links are in `js/s.js`. The first project’s initial
-text and frame are also in `projects.html`, so update both when changing that entry.
-Keep the hidden description IDs: the original script still writes to them.
+The gallery contains 11 images. Each has a normal and higher-resolution version,
+with the browser choosing which to load. The loop adds a copy at either end and
+jumps back to the matching slide when an end is reached. Those copies reuse the
+same image files. Scrolling is manual, with arrow-key support when the gallery
+is focused.
 
-Each gallery image has a normal and higher-resolution version. The browser chooses
-which to load. The loop reuses these files rather than needing extra image copies.
+The contact form builds a `mailto:` link from the entered name, subject and message.
+It opens a draft in the visitor's email app; the site itself does not send or save
+messages.
 
-The games’ App Lab folders include fonts, images and runtime code. Keep those files
-with their games, even when they do not appear directly on the portfolio page.
+## Images and files
 
-## Running and publishing
+The homepage portrait is `assets/portrait.jpg`. The About page uses
+`assets/about-unsplash-olena-bohovyk.jpeg`, credited to Olena Bohovyk on Unsplash
+beneath the image. The résumé PDF is stored in `files/tyler-kweskin-resume.pdf`.
 
-For a local preview, run `python3 -m http.server 8000` from this folder, then open
-http://localhost:8000. Stop the server with Ctrl+C.
+## Hosting
 
-To publish on a static host such as GitHub Pages, upload this folder’s contents with
-`index.html` at the root. Preserve file names, folder names and letter case.
-Java demos need an internet connection and rely on Online Java.
-The contact form opens an email draft; it does not send messages itself.
-
-The layout is desktop-only for now. After an edit, refresh the page and check the
-changed section. For project changes, also try the numbered buttons and both arrows.
+The main site is served through GitHub Pages at
+[tylerkweskin.github.io](https://tylerkweskin.github.io).
+The pages, styles, scripts and local assets are served directly from the repository.
