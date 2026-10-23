@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Label Check</title>
+
+    <!-- Tesseract v5 -->
+    <script src="tesseract.min.js"></script>
+    <!-- SheetJS -->
+    <script src="xlsx.full.min.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f6f7fb;
+        margin: 0;
+        padding: 24px;
+        color: #111;
+      }
+
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .card {
+        background: white;
+        border-radius: 14px;
+        padding: 20px;
+        box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+        border: 1px solid #e9e9ef;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 14px;
+      }
+
+      h1 {
+        font-size: 20px;
+        margin: 0;
+      }
+
+      .sub {
+        margin-top: 6px;
+        font-size: 13px;
+        color: #555;
+        line-height: 1.4;
+      }
+
+      .controls {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin: 16px 0;
+      }
+
+      .row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      input[type="file"] {
+        border: 1px solid #ddd;
+        background: #fafafa;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      button {
+        border: 0;
+        border-radius: 10px;
+        padding: 10px 14px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      button.primary {
+        background: #111;
+        color: white;
+      }
+
+      button.secondary {
+        background: #e9e9ef;
+        color: #111;
+      }
+
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .status {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        margin-top: 6px;
+        font-size: 13px;
+        color: #333;
+      }
+
+      .pill {
+        background: #f1f1f6;
+        border: 1px solid #e3e3ea;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        color: #333;
+        white-space: nowrap;
+      }
+
+      .progress {
+        width: 100%;
+        height: 10px;
+        background: #efeff5;
+        border-radius: 999px;
+        overflow: hidden;
+        border: 1px solid #e7e7ee;
+      }
+
+      .bar {
+        height: 100%;
+        width: 0%;
+        background: #111;
+        transition: width 0.25s ease;
+      }
+
+      .results {
+        margin-top: 14px;
+        border-radius: 12px;
+        border: 1px solid #e9e9ef;
+        background: #fbfbfe;
+        padding: 14px;
+        max-height: 420px;
+        overflow: auto;
+      }
+
+      pre {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.35;
+        white-space: pre-wrap;
+      }
+
+      .footerNote {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #666;
+      }
+    </style>
+
+    <script>
+      const { createWorker } = Tesseract;
+
+      let totalJobs = 0;
+      let finishedJobs = 0;
+      let excelRows = [];
+      let wbReady = null;
+
+      function setStatus(msg) {
+        document.getElementById("statusText").textContent = msg;
+      }
+
+      function setProgress(done, total) {
+        const pct = total === 0 ? 0 : Math.round((done / total) * 100);
+        document.getElementById("progressPill").textContent = `${done}/${total} (${pct}%)`;
+        document.getElementById("bar").style.width = pct + "%";
+      }
+
+      function logToConsole(msg) {
+        document.getElementById("console").textContent += msg;
+      }
+
+      function goThroughFiles() {
+        document.getElementById("console").textContent = "";
+        excelRows = [];
+        finishedJobs = 0;
+        wbReady = null;
+
+        document.getElementById("downloadBtn").disabled = true;
+
+        if (typeof XLSX === "undefined") {
+          setStatus("XLSX library did not load.");
+          logToConsole("ERROR: XLSX is undefined. Check the SheetJS script tag.\n");
+          return;
+        }
+
+        const input = document.getElementById("images");
+        const files = input.files;
+
+        if (files.length === 0) {
+          setStatus("No files selected.");
+          logToConsole("No files selected.\n");
+          return;
+        }
+
+        totalJobs = files.length;
+        setStatus("Processing images...");
+        setProgress(0, totalJobs);
+
+        for (let i = 0; i < files.length; i++) {
+          const file = files[i];
+          file.url = URL.createObjectURL(file);
+          runOCR(file.url, file.name);
+        }
+      }
+
+      async function runOCR(url, name) {
+        try {
+          const worker = await createWorker("eng");
+          const ret = await worker.recognize(url);
+          labelCheck(ret.data.text, name);
+          await worker.terminate();
+        } catch (e) {
+          console.error("OCR error:", name, e);
+          logToConsole(`\n--- LABEL CHECK ${name} ---\nERROR processing file\n`);
+          excelRows.push({
+            File: name,
+            BrandText: "ERROR",
+            AlcoholContent: "ERROR",
+            NetContents: "ERROR",
+            GovWarning: "ERROR",
+          });
+        } finally {
+          finishedJobs++;
+          setProgress(finishedJobs, totalJobs);
+
+          if (finishedJobs === totalJobs) {
+            buildExcel();
+            document.getElementById("downloadBtn").disabled = false;
+            setStatus("Done. Download your Excel file.");
+            logToConsole("\nAll done. Click DOWNLOAD EXCEL.\n");
+          }
+        }
+        URL.revokeObjectURL(url);
+      }
+
+      function labelCheck(text, name) {
+        const t = (text || "").toUpperCase();
+        let results = [];
+
+        const words = t.split(/\s+/);
+        const hasBrandLikeText = words.some((w) => w.length >= 4);
+
+        const alcoholOk = t.includes("%") || t.includes("PROOF");
+        const netOk = t.includes("ML") || t.includes(" L");
+        const warningOk = t.includes("GOVERNMENT WARNING:");
+
+        results.push(hasBrandLikeText ? "✔ Some brand-like text found" : "✖ No obvious brand text");
+        results.push(alcoholOk ? "✔ Alcohol content found" : "✖ Alcohol content missing");
+        results.push(netOk ? "✔ Net contents found" : "✖ Net contents missing");
+        results.push(warningOk ? "✔ Government warning present" : "✖ Government warning missing");
+
+        logToConsole(`\n--- LABEL CHECK ${name} ---\n${results.join("\n")}\n`);
+
+        excelRows.push({
+          File: name,
+          BrandText: hasBrandLikeText ? "PASS" : "FAIL",
+          AlcoholContent: alcoholOk ? "PASS" : "FAIL",
+          NetContents: netOk ? "PASS" : "FAIL",
+          GovWarning: warningOk ? "PASS" : "FAIL",
+        });
+      }
+
+      function buildExcel() {
+        const wb = XLSX.utils.book_new();
+        const ws = XLSX.utils.json_to_sheet(excelRows);
+        XLSX.utils.book_append_sheet(wb, ws, "Results");
+        wbReady = wb;
+      }
+
+      function downloadExcel() {
+        if (!wbReady) {
+          setStatus("Excel not ready yet.");
+          return;
+        }
+        XLSX.writeFile(wbReady, "label_results.xlsx");
+      }
+
+      function clearAll() {
+        document.getElementById("images").value = "";
+        document.getElementById("console").textContent = "";
+        totalJobs = 0;
+        finishedJobs = 0;
+        excelRows = [];
+        wbReady = null;
+        document.getElementById("downloadBtn").disabled = true;
+        setStatus("Ready.");
+        setProgress(0, 0);
+      }
+
+      window.addEventListener("load", () => {
+        setStatus("Ready.");
+        setProgress(0, 0);
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <div class="header">
+          <div>
+            <h1>Alcohol Label Verification</h1>
+            <div class="sub">
+              Upload one or more label images. The tool checks for basic required elements and exports results to Excel.
+            </div>
+          </div>
+          <div class="pill" id="progressPill">0/0 (0%)</div>
+        </div>
+
+        <div class="progress">
+          <div class="bar" id="bar"></div>
+        </div>
+
+        <div class="status">
+          <div id="statusText">Ready.</div>
+          <div class="row">
+            <button class="secondary" onclick="clearAll()">Clear</button>
+            <button id="downloadBtn" class="secondary" onclick="downloadExcel()" disabled>
+              DOWNLOAD EXCEL
+            </button>
+            <button id="submit" class="primary" onclick="goThroughFiles()">
+              PROCESS IMAGES
+            </button>
+          </div>
+        </div>
+
+        <div class="controls">
+          <input type="file" id="images" accept="image/*" multiple />
+        </div>
+
+        <div class="results">
+          <pre id="console"></pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
