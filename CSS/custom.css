@@ -1,6 +1,9 @@
-.headerColor{
+/* Original project styles. A dot selects a class; # selects an ID. */
+
+
+/* Page background. site.css adjusts its position for the project layout. */
+.headerColor {
     background-color: rgba(var(--bg, var(--color_11, 255, 255, 255)), var(--alpha-bg, 1));
-    /* Assumed color_11 is white */
     bottom: 0;
     left: 0;
     overflow: hidden;
@@ -8,26 +11,26 @@
     right: 0;
     top: 0;
 }
-
+/* Panel background. The --bg variable supplies its color. */
 .RedBackground {
     -webkit-backdrop-filter: var(--backdrop-filter, none);
     backdrop-filter: var(--backdrop-filter, none);
-    background-color: var(--container-corvid-background-color, rgba(var(--bg, var(--color_11, color_11)), var(--alpha-bg, 1)));
+    background-color: var(--panel-background-color, rgba(var(--bg, var(--color_11, color_11)), var(--alpha-bg, 1)));
     background-image: var(--bg-gradient, none);
-    border: var(--container-corvid-border-width, var(--brw, 1px)) solid var(--container-corvid-border-color, rgba(var(--brd, var(--color_15, color_15)), var(--alpha-brd, 1)));
+    border: var(--panel-border-width, var(--brw, 1px)) solid var(--panel-border-color, rgba(var(--brd, var(--color_15, color_15)), var(--alpha-brd, 1)));
     border-radius: var(--rd, 5px);
     bottom: 0;
     box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
     left: 0;
     position: absolute;
     right: 0;
-    top: 0
+    top: 0;
 }
-
+/* Numbered JavaScript project buttons. */
 .pagination {
     display: inline-block;
 }
-
+/* Button spacing and rounded corners. Padding is inside; margin is outside. */
 .pagination a {
     color: rgb(0, 0, 0);
     float: left;
@@ -38,21 +41,20 @@
     background-color: #bebebe;
     margin: 0 4px;
 }
-
+/* The selected button and unavailable arrows use the active class. */
 .pagination a.active {
     background-color: #ebebeb;
     fill: rgb(192, 192, 192);
 }
-
+/* Hover colors for buttons that can be clicked. */
 .pagination a:hover:not(.active) {
     background-color: #000000;
     fill: rgb(255, 255, 255);
 }
-
+/* Numbered Java project buttons. */
 .pagination2 {
     display: inline-block;
 }
-
 .pagination2 a {
     color: rgb(0, 0, 0);
     float: left;
@@ -67,12 +69,11 @@
     background-color: #ebebeb;
     fill: rgb(192, 192, 192);
 }
-
 .pagination2 a:hover:not(.active) {
     background-color: #000000;
     fill: rgb(255, 255, 255);
 }
-
+/* JavaScript back and next arrows. */
 .nexts a {
     color: rgb(0, 0, 0);
     float: left;
@@ -83,17 +84,15 @@
     background-color: #bebebe;
     margin: 0 4px;
 }
-
 .nexts a.active {
     background-color: #ebebeb;
     fill: rgb(192, 192, 192);
 }
-
 .nexts a:hover:not(.active) {
     background-color: #000000;
     fill: rgb(255, 255, 255);
 }
-
+/* Java back and next arrows. */
 .nexts2 a {
     color: rgb(0, 0, 0);
     float: left;
@@ -104,26 +103,15 @@
     background-color: #bebebe;
     margin: 0 4px;
 }
-
 .nexts2 a.active {
     background-color: #ebebeb;
     fill: rgb(192, 192, 192);
 }
-
 .nexts2 a:hover:not(.active) {
     background-color: #000000;
     fill: rgb(255, 255, 255);
 }
-
-@media screen and (max-width: 750px){
-    .nexts {
-        display: none;
-    }
-    .nexts2 {
-        display: none;
-    }
-}
-
+/* Remove the browser’s default margin around the page. */
 body,
 html {
     background: rgb(48,44,44);
@@ -132,13 +120,60 @@ html {
     outline: 0;
     padding: 0;
 }
-
-
+/* Viewport sizing values used by site.css. 1vw is 1% of the window width. */
 :root {
     --one-unit: 1vw;
     --section-max-width: 9999px;
-    --spx-stopper-max: 9999px;
-    --spx-stopper-min: 0px;
 }
-
-
+/* Laptop icon position and size. */
+.laptopLogo svg {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.laptopLogo svg {
+    height: var(--svg-calculated-height, 100%);
+    margin: auto;
+    padding: var(--svg-calculated-padding, 0);
+    width: var(--svg-calculated-width, 100%);
+}
+.laptopLogo svg:not([data-type=ugc]) {
+    overflow: visible;
+}
+/* Remove default margins inside the name and title boxes. */
+.NamePlate blockquote,
+.NamePlate h1,
+.NamePlate h2,
+.NamePlate h3,
+.NamePlate h4,
+.NamePlate h5,
+.NamePlate h6,
+.NamePlate p,
+.areaTitle blockquote,
+.areaTitle h1,
+.areaTitle h2,
+.areaTitle h3,
+.areaTitle h4,
+.areaTitle h5,
+.areaTitle h6,
+.areaTitle p {
+    margin-block: 0;
+    margin: 0;
+}
+/* Use the surrounding text color for these links. */
+.NamePlate a,
+.areaTitle a {
+    color: inherit;
+}
+/* Icon button size. */
+.ButtonSize {
+    height: 50px;
+}
+.ButtonSize svg,
+        .ButtonSize>span {
+    display: flex;
+    height: inherit;
+    width: inherit;
+}

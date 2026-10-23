@@ -1,0 +1,780 @@
+/* Project layout and gallery styles. Shared page styling is in portfolio.css. */
+
+
+/* Default colors and fonts for the project panels. */
+:root,
+:host,
+.theme-override,
+.max-width-container {
+    --color_11: 43, 43, 43;
+    --color_13: 209, 209, 209;
+    --color_15: 204, 204, 204;
+    --color_16: 110, 54, 54;
+    --font_2: normal normal normal 72px/1.4em poppins-semibold, poppins, sans-serif;
+    --font_8: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --scaling-factor: min((100 * var(--one-unit)), var(--section-max-width));
+}
+
+/* Default heading font. */
+.heading-text {
+    font: var(--font_2);
+    color: rgb(var(--color_15));
+    letter-spacing: 0em;
+    padding-top: 15px;
+}
+
+/* Default paragraph font. s.js also sets project description sizes. */
+.body-text {
+    font: var(--font_8);
+    color: rgb(var(--color_15));
+    letter-spacing: 0em;
+}
+
+/* Load the local font. ../ means one folder up from CSS. */
+@font-face {
+    font-family: "avenir-lt-w01_35-light1475496";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/avenir-light.woff2") format("woff2");
+    unicode-range: U+0, U+D, U+20-7E, U+A0-FF, U+131, U+152-153, U+160-161, U+178, U+17D-17E, U+192, U+237, U+2C6-2C7, U+2DA, U+2DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "poppins-semibold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/poppins.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+/* Page layout */
+
+/* Let the page grow to fit its content. */
+#portfolio-page {
+    height: auto;
+    position: relative;
+}
+
+/* Grid rows for the project sections. */
+#portfolio-page .page-layout {
+    box-sizing: border-box;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: minmax(0px, 1fr);
+}
+
+#portfolio-page:not(.page-layout) {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+#portfolio-page {
+    --bg: var(--color_11);
+    --alpha-bg: 1;
+}
+
+
+/* Original header styles */
+
+/* Header grid placement. */
+#site-header {
+    height: auto;
+    min-height: 100px;
+    align-self: stretch;
+    justify-self: stretch;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+.header-layout {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+#site-header {
+    --bg: var(--color_11);
+    --alpha-bg: 0;
+}
+
+/* Name and logo container. */
+#header-content {
+    min-height: 73px;
+    height: auto;
+    min-width: 178.09375px;
+    width: 53.6622084178499%;
+    max-width: 529.109375px;
+    max-height: 99999px;
+    align-self: center;
+    justify-self: start;
+    margin-left: 2.445169878296146%;
+    margin-right: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+/* Place the logo and name in the same grid cell. */
+.header-content-layout {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+#header-content {
+    --brw: 0px;
+    --brd: var(--color_13);
+    --bg: var(--color_16);
+    --rd: 0px;
+    --shd: none;
+    --alpha-brd: 1;
+    --alpha-bg: 0;
+    --bg-gradient: none;
+}
+
+/* Logo size and position. */
+#header-laptop-logo {
+    height: 50px;
+    width: 125px;
+    display: block;
+    align-self: start;
+    justify-self: start;
+    margin-left: 20.59375px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+/* Name position. */
+#header-owner-name {
+    width: 68.1022498326062%;
+    height: auto;
+    display: block;
+    align-self: start;
+    justify-self: end;
+    margin-left: 0%;
+    margin-right: 6.462620140700869%;
+    margin-top: 14px;
+    margin-bottom: 0px;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+
+/* Gallery banner */
+
+/* Place the title over the gallery. */
+#programs-gallery-section {
+    min-height: 280.421875px;
+    height: auto;
+    align-self: stretch;
+    justify-self: stretch;
+    grid-area: 2/1/3/2;
+    position: relative;
+}
+
+.gallery-section-layout {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+#programs-gallery-section {
+    --bg: var(--color_11);
+    --alpha-bg: 0;
+}
+
+/* Banner size and crop. */
+#programs-image-gallery {
+    min-height: 0px;
+    height: 111.04915092253816%;
+    width: 100%;
+    max-height: 99999px;
+    align-self: end;
+    justify-self: start;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: -30.999874999999975px;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+#programs-image-gallery:not(.programs-image-gallery-container) {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+
+/* JavaScript projects */
+
+/* Reserve space for the game and its description. */
+#javascript-projects-section {
+    height: auto;
+    min-height: 875.1749877929688px;
+    align-self: stretch;
+    justify-self: stretch;
+    grid-area: 3/1/4/2;
+    position: relative;
+}
+
+.javascript-section-layout {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+#javascript-projects-section {
+    --bg: var(--color_11);
+    --alpha-bg: 0;
+}
+
+/* Project panel size and position. */
+#javascript-projects-content {
+    min-height: 790.2000122070312px;
+    height: auto;
+    min-width: 797.9625244140625px;
+    width: 63.050136252691416%;
+    max-width: 797.9625244140625px;
+    max-height: 790.2000122070312px;
+    align-self: start;
+    justify-self: start;
+    margin-left: 3.140802781289507%;
+    margin-right: 0%;
+    margin-top: 3.4133993117456645%;
+    margin-bottom: 0%;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+.javascript-content-layout {
+    box-sizing: border-box;
+    row-gap: 0px;
+    column-gap: 0px;
+    display: grid;
+    grid-template-rows: minmax(max(0.5px, 0.623045 * (var(--scaling-factor) - var(--scrollbar-width))), auto);
+    grid-template-columns: minmax(0px, 798.9630122070312fr);
+}
+
+#javascript-projects-content {
+    --brw: 0px;
+    --brd: 0, 0, 0;
+    --bg: var(--color_16);
+    --rd: 0px 0px 0px 0px;
+    --shd: 0px max(0.5px, 0.0007815 * (var(--scaling-factor) - var(--scrollbar-width))) max(0.5px, 0.0031254 * (var(--scaling-factor) - var(--scrollbar-width))) 0px rgba(0, 0, 0, 0.6);
+    --alpha-brd: 0;
+    --alpha-bg: 1;
+    --bg-gradient: none;
+}
+
+/* Shared frame placement for JavaScript and Java projects. */
+:is(#javascript-project-embed-container, #java-project-embed-container) {
+    height: auto;
+    min-width: 48.87404139124896%;
+    width: 48.87404139124896%;
+    display: block;
+    align-self: start;
+    justify-self: start;
+    margin-left: 48.04374694824219px;
+    margin-right: 0%;
+    margin-top: 114.20002365112293px;
+    margin-bottom: 0px;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+:is(#javascript-project-embed-container, #java-project-embed-container) {
+    --alpha-borderColor: 0;
+    --alpha-bgColor: 0;
+    --borderWidth: 0.0;
+    --borderRadius: 0px 0px 0px 0px;
+}
+
+/* Fit each navigation bar around its buttons. */
+:is(#javascript-project-pagination-container, #java-project-pagination-container) {
+    min-height: 0px;
+    height: auto;
+    width: max-content;
+    align-self: start;
+    justify-self: center;
+    margin-left: 0.15815728562524636%;
+    margin-right: 0%;
+    margin-top: 2.827512052563841%;
+    margin-bottom: 0%;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+/* Keep the button groups in a row. Button colors are in custom.css. */
+.project-pagination-layout {
+    box-sizing: border-box;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+:is(#javascript-project-pagination-container, #java-project-pagination-container) {
+    --brw: 0px;
+    --brd: var(--color_15);
+    --bg: var(--color_11);
+    --rd: 0px;
+    --shd: none;
+    --alpha-brd: 0;
+    --alpha-bg: 0;
+    --bg-gradient: none;
+}
+
+/* JavaScript description box. */
+#javascript-project-description {
+    height: auto;
+    min-width: 0px;
+    width: 33.91917997495067%;
+    max-width: 99999px;
+    display: block;
+    align-self: start;
+    justify-self: end;
+    margin-left: 0%;
+    margin-right: 27.12550610351559px;
+    margin-top: 195.10000610351562px;
+    margin-bottom: 0%;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+/* Selected project title. s.js updates JSTITLE. */
+#javascript-project-title {
+    width: 67.78646517510259%;
+    height: auto;
+    display: block;
+    align-self: start;
+    justify-self: center;
+    margin-left: 0%;
+    margin-right: 1.8469482142538205%;
+    margin-top: 9.434962035021126%;
+    margin-bottom: 0%;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+/* JavaScript section heading. */
+#javascript-section-heading {
+    width: 27.54320169674039%;
+    height: auto;
+    display: block;
+    align-self: start;
+    justify-self: start;
+    margin-left: 70.88633946010046%;
+    margin-right: 0%;
+    margin-top: 355.987512588501px;
+    margin-bottom: 0px;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+
+/* Original footer styles */
+
+/* Footer grid placement. */
+#site-footer-wrapper {
+    width: auto;
+    height: auto;
+    align-self: stretch;
+    justify-self: stretch;
+    grid-area: 5/1/6/2;
+    position: relative;
+}
+
+.footer-wrapper-layout {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+#site-footer-wrapper {
+    --alpha-bg: 0;
+    --bg: var(--color_11);
+}
+
+#site-footer {
+    height: auto;
+    min-height: 100px;
+    align-self: stretch;
+    justify-self: stretch;
+    grid-area: 3/1/4/2;
+    position: relative;
+}
+
+.footer-layout {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+#site-footer {
+    --bg: var(--color_11);
+    --alpha-bg: 0;
+}
+
+/* Footer text spacing. */
+#footer-about-this-website {
+    height: auto;
+    width: 40%;
+    display: block;
+    align-self: center;
+    justify-self: center;
+    margin-left: 0px;
+    margin-right: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+
+/* Java projects */
+
+/* Place Java projects below JavaScript projects. */
+#java-projects-section {
+    height: auto;
+    min-height: 875.1749877929688px;
+    align-self: stretch;
+    justify-self: stretch;
+    grid-area: 4/1/5/2;
+    position: relative;
+}
+
+.java-section-layout {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+#java-projects-section {
+    --bg: var(--color_11);
+    --alpha-bg: 0;
+}
+
+/* Java panel size and position. */
+#java-projects-content {
+    min-height: 790.2000122070312px;
+    height: auto;
+    min-width: 797.9625244140625px;
+    width: 63.050136252691416%;
+    max-width: 797.9625244140625px;
+    max-height: 790.2000122070312px;
+    align-self: start;
+    justify-self: end;
+    margin-left: 0%;
+    margin-right: 3.1%;
+    margin-top: 3.4133993117456645%;
+    margin-bottom: 0%;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+.java-content-layout {
+    box-sizing: border-box;
+    row-gap: 0px;
+    column-gap: 0px;
+    display: grid;
+    grid-template-rows: minmax(max(0.5px, 0.6230447 * (var(--scaling-factor) - var(--scrollbar-width))), auto);
+    grid-template-columns: minmax(0px, 798.9630122070312fr);
+}
+
+#java-projects-content {
+    --brw: 0px;
+    --brd: 0, 0, 0;
+    --bg: var(--color_16);
+    --rd: 0px 0px 0px 0px;
+    --shd: 0px max(0.5px, 0.0007815 * (var(--scaling-factor) - var(--scrollbar-width))) max(0.5px, 0.0031254 * (var(--scaling-factor) - var(--scrollbar-width))) 0px rgba(0, 0, 0, 0.6);
+    --alpha-brd: 0;
+    --alpha-bg: 1;
+    --bg-gradient: none;
+}
+
+/* Online Java frame. Its width and height are also set in projects.html. */
+#java-project-iframe-container {
+    height: auto;
+    min-width: 48.87404139124896%;
+    width: 48.87404139124896%;
+    display: block;
+    align-self: start;
+    justify-self: start;
+    margin-left: 48.04374694824219px;
+    margin-right: 0%;
+    margin-top: 114.20002365112293px;
+    margin-bottom: 0px;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+#java-project-iframe-container {
+    --alpha-borderColor: 0;
+    --alpha-bgColor: 0;
+    --borderWidth: 0.0;
+    --borderRadius: 0px 0px 0px 0px;
+}
+
+/* Java description box. s.js updates JAVAdesktopDesc. */
+#java-project-description {
+    height: auto;
+    min-width: 0px;
+    width: 33.91917997495067%;
+    max-width: 99999px;
+    display: block;
+    align-self: start;
+    justify-self: end;
+    margin-left: 0%;
+    margin-right: 36.638006866455044px;
+    margin-top: 130.1999969482422px;
+    margin-bottom: 0%;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+/* Selected Java project title. */
+#java-project-title {
+    width: 67.78646517510259%;
+    height: auto;
+    display: block;
+    align-self: start;
+    justify-self: center;
+    margin-left: 0%;
+    margin-right: 1.8469482142538205%;
+    margin-top: 9.434962035021126%;
+    margin-bottom: 0%;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+/* Java section heading. */
+#java-section-heading {
+    width: 27.54320169674039%;
+    height: auto;
+    display: block;
+    align-self: start;
+    justify-self: end;
+    margin-left: 0%;
+    margin-right: 70.9%;
+    margin-top: 355.987512588501px;
+    margin-bottom: 0px;
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+
+/* Text styles */
+
+/* Text styles for the project panels. */
+#header-owner-name :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    font-size: 28px;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+}
+
+#javascript-project-description :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-size: 31.25510729698352px;
+    letter-spacing: 0em;
+    line-height: 1.6;
+}
+
+#javascript-project-title :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+}
+
+#javascript-section-heading :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: #CCCCCC;
+    background-color: transparent;
+    font-size: max(54px, max(0.5px, 0.042816 * (var(--scaling-factor) - var(--scrollbar-width))));
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0em;
+    line-height: normal;
+}
+
+#javascript-section-heading [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: #CCCCCC;
+}
+
+#site-footer {
+    --bg-gradient: none;
+}
+
+#footer-about-this-website :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: #CCCCCC;
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0em;
+    line-height: 1.6;
+}
+
+#footer-about-this-website [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: #CCCCCC;
+}
+
+#java-projects-section {
+    --bg-gradient: none;
+}
+
+#java-project-description :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-size: 29px;
+    letter-spacing: 0em;
+    line-height: 1.6;
+}
+
+#java-project-title :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+}
+
+#java-section-heading :is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: #CCCCCC;
+    background-color: transparent;
+    font-size: max(54px, max(0.5px, 0.042816 * (var(--scaling-factor) - var(--scrollbar-width))));
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0em;
+    line-height: normal;
+}
+
+#java-section-heading [class$=rich-text__text]:is(p, h1, h2, h3, h4, h5, h6, ul, ol, span[data-attr-richtext-marker], blockquote) {
+    color: #CCCCCC;
+}
+
+.full_container {
+    background-image: url("../index_files/Loading.gif");
+    background-repeat: no-repeat;
+}
+
+
+/* Gallery scrolling. gallery.js adds a copy at either end to make the images loop. */
+
+/* Clip the images to the banner area. */
+.banner-clip {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Keep the 1993px-wide image row so the crop stays consistent. */
+.banner-scroll {
+    display: flex;
+    width: 1993px;
+    height: 311px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    direction: ltr;
+}
+
+/* Hide the scrollbar without disabling scrolling. */
+.banner-scroll::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Each slide keeps its full width, with 10px of space below the image. */
+.banner-slide {
+    display: block;
+    flex: 0 0 1993px;
+    height: 311px;
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+/* Give every image the same displayed size and crop. */
+.banner-slide img {
+    display: block;
+    width: 1993px;
+    height: 301px;
+    object-fit: cover;
+}
+
+/* Desktop width. Smaller windows scroll horizontally. */
+/* Keep this width in sync with the viewport setting in the HTML pages. */
+html,
+body,
+#portfolio-page {
+    min-width: 1200px;
+}
+
+/* Programs heading with a dark background. */
+/* Change padding for more space around the title, or background for a different box color. */
+#programs-title {
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 16px 40px;
+    background: #202020;
+    color: #f7f7f7;
+    font: 400 141px / 1.1 poppins-semibold, poppins, sans-serif;
+    text-align: center;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+/* Shade the gallery edges. The transparent middle keeps the image visible; clicks pass through this layer. */
+.banner-clip::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: min(100%, 1993px);
+    height: 301px;
+    z-index: 1;
+    pointer-events: none;
+    /* Darken the full top and bottom edges. Increase 0.52 for a stronger shadow. */
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.52) 0%,
+            rgba(0, 0, 0, 0.20) 8%,
+            transparent 20%,
+            transparent 80%,
+            rgba(0, 0, 0, 0.20) 92%,
+            rgba(0, 0, 0, 0.52) 100%),
+        radial-gradient(ellipse at center, transparent 50%, rgba(0, 0, 0, 0.28) 100%);
+    box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.16);
+}

@@ -1,25 +1,31 @@
+/* Project buttons in projects.html call these functions. Keep the IDs in both files in sync. */
+/* JavaScript projects: names, descriptions, then file paths. Entries in the same position belong together. Array positions start at 0. */
 var JS2d=[
     ["Wordle","Bingo","TicTacToe","Card Jitsu","Hangman","Blank Slate"],
     ["This recreation of the online game Wordle was my submission to College Board for my AP Computer Science Principles Class.","This recreation of Bingo was created to see what I could do while using an edited version of my version of Wordle.","This recreation of Tic Tac Toe was created as another project I could try and make before the  Wordle Assignment was  due in class.","This recreation of the mini-game Card Jitsu was created around the time I was playing a lot of Club Penguin Rewritten (a fan server of Club Penguin that got shut down by Disney) and I was just curious if I could without looking at any Youtube Videos on the subject.","This recreation of Hangman was created as I wanted to make Hangman for the Ap Computer Science Principals test but went with Wordle as they seemed to work similarly and then later I made this after the Creat Task as a wonder of how similar they were.","This recreation of the mini-game Card Jitsu was created around the time I was playing a lot of Club Penguin Rewritten (a fan server of Club Penguin that got shut down by Disney) and I was just curious if I could without looking at any Youtube Videos on the subject."],
     ["JavaScript work/Create Task_ Wordle/index.html","JavaScript work/Bingo/index.html","JavaScript work/Tic Tac Toe/index.html","JavaScript work/Card jitsu/index.html","JavaScript work/Hangman/index.html","JavaScript work/Blank Slate/index.html"]
 ]
 
+/* Java projects use the same arrangement, with Online Java links in the last row. */
 var JAVA2d=[
     ["Shop Simulator","Wanderer","TicTacToe","Chatbot","Tamagotchi","BattleShip","Black Jack and Go Fish"],
     ["I created this as just some demo app of a Sandwich shop simulator for fun one day and worked on it for a while during my CSA class.","I started with the idea of making an Oregon Trail mimic, however it later became an original little text adventure demo akin to Zork","I created this on my own time just to see if I was able to quickly recrate the Tic Tac Toe game I made in java Script but now for Java. I later added this to the chatbot for CSA class as a simple addon.","This goofy little chatbot was a project for AP CSA where I worked with another person using a tic tac toe game I previously made on my own and their hangman game to add more functions to the bot.","This was a simple demo of being able to run code in real time outside of the typical order of operations.","This recreation of Battle Ship was made with another student for a CSA project. The game is very simple, the player has no ships but an ai sets up the board for the player to attack.","This was created with another student, we worked together on the black jack side of things. After finishing the Black Jack game I decided to see if I could make Gold Fish with the same code making the cards which I did."],
     ["https://www.online-java.com/2pZKj14e35?embed=true","https://www.online-java.com/uwcMaverG8?embed=true","https://www.online-java.com/Pu4eYXTqmF?embed=true","https://www.online-java.com/XuT2yHF3xS?embed=true","https://www.online-java.com/QOlWyVIgsB?embed=true","https://www.online-java.com/plEDzGm7bA?embed=true","https://www.online-java.com/n4dFgLuW7C?embed=true"]
 ]
+/* This load handler is currently empty. */
 document.addEventListener("DOMContentLoaded",()=>{
     //document.getElementById("JSback").className="a"
 
 })
 
+/* Project counts and current selections. Adding a project also needs a new button and matching data above. */
 var jSmaxpagi =6;
 var jSpaginum = 1;
 
 var jMaxpagi=7;
 var jPaginum=1;
 
+/* Numbered JavaScript buttons: load the chosen game, then update its title and buttons. */
 function JSpag1(event) {
     if(document.getElementById("JSpag1").className=="active"){
         return
@@ -66,6 +72,7 @@ function JSpag6(event) {
 
 }
 
+/* Go back one project, stopping at the first. */
 function JSback_click(event) {
     if(document.getElementById("JSback").className=="active"){
         return
@@ -77,6 +84,7 @@ function JSback_click(event) {
     }
 }
 
+/* Go forward one project, stopping at the last. */
 function JSnext_click(event) {
     if(document.getElementById("JSnext").className=="active"){
         return
@@ -90,6 +98,7 @@ function JSnext_click(event) {
 }
 
 
+/* Update the selected button, description and end arrows. */
 function JSopacity(clicked) {
 
 	JStextSize(clicked)
@@ -115,19 +124,20 @@ function JSopacity(clicked) {
 	}
 }
 
+/* Update the description. Longer entries use smaller text. The old ipad/phone targets are hidden in projects.html. */
 function JStextSize(clicked) {
 	if(clicked>=4){
-        document.getElementById("JSdesktopDesc").innerHTML='<span style="font-size:20px;" class="wixui-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
+        document.getElementById("JSdesktopDesc").innerHTML='<span style="font-size:20px;" class="site-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
 
-        document.getElementById("JSipadDesc").innerHTML='<span style="font-size:20px;" class="wixui-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
+        document.getElementById("JSipadDesc").innerHTML='<span style="font-size:20px;" class="site-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
 
-        document.getElementById("JSphoneDesc").innerHTML='<span style="font-size:20px;" class="wixui-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
+        document.getElementById("JSphoneDesc").innerHTML='<span style="font-size:20px;" class="site-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
 	}else{
-        document.getElementById("JSdesktopDesc").innerHTML='<span style="font-size:31px;" class="wixui-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
+        document.getElementById("JSdesktopDesc").innerHTML='<span style="font-size:31px;" class="site-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
 
-        document.getElementById("JSipadDesc").innerHTML='<span style="font-size:29px;" class="wixui-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
+        document.getElementById("JSipadDesc").innerHTML='<span style="font-size:29px;" class="site-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
 
-        document.getElementById("JSphoneDesc").innerHTML='<span style="font-size:25px;" class="wixui-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
+        document.getElementById("JSphoneDesc").innerHTML='<span style="font-size:25px;" class="site-rich-text__text">'+JS2d[1][clicked-1]+'</span>'
 	}
 
     document.getElementById("JSTITLE").innerHTML=JS2d[0][clicked-1]
@@ -135,6 +145,7 @@ function JStextSize(clicked) {
 
 //JAVA CODE
 
+/* Numbered Java buttons. */
 function JAVApag1(event) {
     if(document.getElementById("JAVApag1").className=="active"){
         return
@@ -187,6 +198,7 @@ function JAVApag7(event) {
     JAVAopacity(7)
 }
 
+/* Go back one Java project. */
 function JAVAback_click(event) {
     if(document.getElementById("JAVAback").className=="active"){
         return
@@ -198,6 +210,7 @@ function JAVAback_click(event) {
     }
 }
 
+/* Go forward one Java project. */
 function JAVAnext_click(event) {
     if(document.getElementById("JAVAnext").className=="active"){
         return
@@ -211,6 +224,7 @@ function JAVAnext_click(event) {
 }
 
 
+/* Update the selected Java button, description and end arrows. */
 function JAVAopacity(clicked) {
 	JAVAtextSize(clicked)
     document.getElementById("JAVApag"+clicked).className="active"
@@ -233,19 +247,20 @@ function JAVAopacity(clicked) {
 	}
 }
 
+/* Update the Java title and description. The older font-size code below is commented out. */
 function JAVAtextSize(clicked) {
 	//if(clicked>=4){
-        document.getElementById("JAVAdesktopDesc").innerHTML='<span class="wixui-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
+        document.getElementById("JAVAdesktopDesc").innerHTML='<span class="site-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
 
-        document.getElementById("JAVAipadDesc").innerHTML='<span class="wixui-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
+        document.getElementById("JAVAipadDesc").innerHTML='<span class="site-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
 
-        document.getElementById("JAVAphoneDesc").innerHTML='<span class="wixui-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
+        document.getElementById("JAVAphoneDesc").innerHTML='<span class="site-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
 	/*}else{
-        document.getElementById("JAVAdesktopDesc").innerHTML='<span style="font-size:31px;" class="wixui-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
+        document.getElementById("JAVAdesktopDesc").innerHTML='<span style="font-size:31px;" class="site-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
 
-        document.getElementById("JAVAipadDesc").innerHTML='<span style="font-size:29px;" class="wixui-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
+        document.getElementById("JAVAipadDesc").innerHTML='<span style="font-size:29px;" class="site-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
 
-        document.getElementById("JAVAphoneDesc").innerHTML='<span style="font-size:25px;" class="wixui-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
+        document.getElementById("JAVAphoneDesc").innerHTML='<span style="font-size:25px;" class="site-rich-text__text">'+JAVA2d[1][clicked-1]+'</span>'
 	}*/
 
     document.getElementById("JAVATITLE").innerHTML=JAVA2d[0][clicked-1]

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Keep width=1200 while the site uses a desktop layout. -->
+  <meta name="viewport" content="width=1200">
+  <title>Projects | Tyler Kweskin</title>
+  <meta name="description" content="Tyler Kweskin’s portfolio: programming projects, work experiences, and computer science education at Rutgers University.">
+  <link rel="stylesheet" href="CSS/custom.css"><link rel="stylesheet" href="CSS/site.css"><script src="js/s.js"></script><script src="js/gallery.js" defer></script>
+  <!-- Shared page styles. -->
+  <link rel="stylesheet" href="CSS/portfolio.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script src="js/project-entry.js" defer></script>
+</head>
+<body class="projects-page">
+<!-- Keep these links the same on all five pages. aria-current marks the current page. -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-top"><div class="shell top-inner"><a class="brand" href="index.html" aria-label="Tyler Kweskin home"><span class="brand-mark" aria-hidden="true">&lt;tk/&gt;</span><span>Tyler Kweskin<span class="brand-sub">PERSONAL PORTFOLIO</span></span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html" aria-current="page">Projects</a><a href="resume.html">Résumé</a><a href="contact.html">Contact</a></nav></div></header>
+<div id="portfolio-page"><main id="main"><section class="shell project-intro"><h1>Projects</h1><p>Games and small programs made while exploring JavaScript and Java. Use the numbered controls to switch between projects. The Java demos load from Online Java and may depend on that service being available.</p><div class="actions"><a class="text-link" href="#javascript-projects-section">JavaScript games ↓</a><a class="text-link" href="#java-projects-section">Java programs ↓</a></div></section>
+        
+        <!-- Images scroll horizontally; one title sits above them -->
+        <section id="programs-gallery-section" tabindex="-1" class="gallery-section-layout">
+          <div id="background-layers-programs-gallery-section">
+            <div></div>
+            <div id="background-media-programs-gallery-section">
+            </div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          
+          <!-- A simple horizontal image list. Shared dimensions and scrolling rules are in the gallery section of CSS/site.css. -->
+<div id="programs-image-gallery">
+            <!-- This outer box clips the gallery to the existing banner area. -->
+            <div class="banner-clip">
+              <!-- Eleven images, each listed once. gallery.js adds two temporary end copies in the browser so scrolling can wrap seamlessly in either direction. Keep the normal and 2x versions together when replacing an image. -->
+              <div class="banner-scroll" role="region" aria-label="Project image gallery" tabindex="0">
+                
+                <picture class="banner-slide">
+                  <source type="image/jpeg" srcset="assets/gallery-slide-01-1993x301.jpg 1x, assets/gallery-slide-01-3986x602.jpg 2x">
+                  <img id="programs-gallery-slide-01-image" src="assets/gallery-slide-01-1993x301.jpg" alt="" loading="eager" width="1993" height="301">
+                </picture>
+                
+                <picture class="banner-slide">
+                  <source type="image/png" srcset="assets/gallery-slide-02-1993x301.png 1x, assets/gallery-slide-02-3986x602.png 2x">
+                  <img id="programs-gallery-slide-02-image" src="assets/gallery-slide-02-1993x301.png" alt="" loading="lazy" width="1993" height="301">
+                </picture>
+                
+                <picture class="banner-slide">
+                  <source type="image/jpeg" srcset="assets/gallery-slide-03-1993x301.jpg 1x, assets/gallery-slide-03-3986x602.jpg 2x">
+                  <img id="programs-gallery-slide-03-image" src="assets/gallery-slide-03-1993x301.jpg" alt="" loading="lazy" width="1993" height="301">
+                </picture>
+                
+                <picture class="banner-slide">
+                  <source type="image/png" srcset="assets/gallery-slide-04-1993x301.png 1x, assets/gallery-slide-04-3986x602.png 2x">
+                  <img id="programs-gallery-slide-04-image" src="assets/gallery-slide-04-1993x301.png" alt="" loading="lazy" width="1993" height="301">
+                </picture>
+                
+                <picture class="banner-slide">
+                  <source type="image/jpeg" srcset="assets/gallery-slide-05-1993x301.jpg 1x, assets/gallery-slide-05-3986x602.jpg 2x">
+                  <img id="programs-gallery-slide-05-image" src="assets/gallery-slide-05-1993x301.jpg" alt="" loading="lazy" width="1993" height="301">
+                </picture>
+                
+                <picture class="banner-slide">
+                  <source type="image/png" srcset="assets/gallery-slide-06-1993x301.png 1x, assets/gallery-slide-06-3986x602.png 2x">
+                  <img id="programs-gallery-slide-06-image" src="assets/gallery-slide-06-1993x301.png" alt="" loading="lazy" width="1993" height="301">
+                </picture>
+                
+                <picture class="banner-slide">
+                  <source type="image/jpeg" srcset="assets/gallery-slide-07-1993x301.jpg 1x, assets/gallery-slide-07-3986x602.jpg 2x">
+                  <img id="programs-gallery-slide-07-image" src="assets/gallery-slide-07-1993x301.jpg" alt="" loading="lazy" width="1993" height="301">
+                </picture>
+                
+                <picture class="banner-slide">
+                  <source type="image/png" srcset="assets/gallery-slide-08-1935x301.png 1x, assets/gallery-slide-08-3870x602.png 2x">
+                  <img id="programs-gallery-slide-08-image" src="assets/gallery-slide-08-1935x301.png" alt="" loading="lazy" width="1993" height="301">
+                </picture>
+                
+                <picture class="banner-slide">
+                  <source type="image/jpeg" srcset="assets/gallery-slide-09-1993x301.jpg 1x, assets/gallery-slide-09-3986x602.jpg 2x">
+                  <img id="programs-gallery-slide-09-image" src="assets/gallery-slide-09-1993x301.jpg" alt="" loading="lazy" width="1993" height="301">
+                </picture>
+                
+                <picture class="banner-slide">
+                  <source type="image/png" srcset="assets/gallery-slide-10-1980x301.png 1x, assets/gallery-slide-10-3657x555.png 2x">
+                  <img id="programs-gallery-slide-10-image" src="assets/gallery-slide-10-1980x301.png" alt="" loading="lazy" width="1993" height="301">
+                </picture>
+                
+                <picture class="banner-slide">
+                  <source type="image/jpeg" srcset="assets/gallery-slide-11-1993x301.jpg 1x, assets/gallery-slide-11-3986x602.jpg 2x">
+                  <img id="programs-gallery-slide-11-image" src="assets/gallery-slide-11-1993x301.jpg" alt="" loading="lazy" width="1993" height="301">
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <!-- This is the only Programs heading. Its solid dark box, text size and padding are controlled by #programs-title at the end of site.css. -->
+<h2 id="programs-title">Programs</h2>
+          
+        </section>
+
+        <!-- Original iframe, controls and description -->
+        <section id="javascript-projects-section" tabindex="-1" class="javascript-section-layout">
+          <div id="background-layers-javascript-projects-section">
+            <div></div>
+            <div id="background-media-javascript-projects-section"></div>
+          </div>
+          
+          <div id="javascript-projects-content" role="" class="javascript-content-layout">
+            <div class="RedBackground"></div>
+            
+            <div id="javascript-project-embed-container" style="height:auto;">
+              <div style="background-color:rgb(var(--bgColor, var(--color_11)), var(--alpha-bgColor, 1));border-radius:var(--borderRadius, 0);border:calc(1px * var(--borderWidth, 0)) solid rgb(var(--borderColor, var(--color_15)), var(--alpha-borderColor, 0.7));padding:calc(1px * var(--verticalPadding, 0)) calc(1px * var(--horizontalPadding, 0));">
+                <div style="height: 624px;max-height: 624px;">
+                  <div class="full_container" style="margin-top: 30px;">
+                    <!-- Iframe displays a separate HTML page inside this page. src is the initially loaded project; s.js changes it when you choose another project. -->
+<iframe title="Selected JavaScript game" id="JSiframe" width="352" height="612" style="border: 0px;"
+                      src="JavaScript work/Create Task_ Wordle/index.html"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- The existing onclick handlers call functions in s.js. Keep the element IDs synchronized with that file. The active class marks a selected page or an unavailable arrow. -->
+<div id="javascript-project-pagination-container" role="" class="project-pagination-layout">
+              <div class="nexts">
+                <a aria-label="Previous project" id="JSback" href="#/" onclick="JSback_click()" class="active">
+                  <span class="ButtonSize" aria-hidden="true"data-testid="stylablebutton-icon">
+                    <span>
+                      <svg viewBox="0 0 200 200" height="200" width="400"xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                      <g transform="scale(-1,1) translate(-180,0)">
+                        <path
+                          d="M20.5 21.5l159 78.5-159 78.5v-157z">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                  </button>
+                </span></a>
+              </div>
+              <div class="pagination" style="margin-left: 25px;margin-right: 25px;">
+                <a aria-label="Select project 1" id="JSpag1" href="#/" onclick="JSpag1()" class="active"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span>
+                    </button>
+                  </span></a>
+                <a aria-label="Select project 2" id="JSpag2" href="#/" onclick="JSpag2()" class="a"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span></span></a>
+                <a aria-label="Select project 3" id="JSpag3" href="#/" onclick="JSpag3()" class="a"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span></span></a>
+                <a aria-label="Select project 4" id="JSpag4" href="#/" onclick="JSpag4()" class="a"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span></span></a>
+                <a aria-label="Select project 5" id="JSpag5" href="#/" onclick="JSpag5()" class="a"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span></span></a>
+                <a aria-label="Select project 6" id="JSpag6" href="#/" onclick="JSpag6()" class="a"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span></span></a>
+              </div>
+              <div class="nexts">
+                <a aria-label="Next project" id="JSnext" href="#/" onclick="JSnext_click()" class="a">
+                  <span class="ButtonSize" aria-hidden="true"data-testid="stylablebutton-icon">
+                    <span>
+                      <svg viewBox="0 0 200 200" height="200" width="400"xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                      <g>
+                        <path
+                          d="M20.5 21.5l159 78.5-159 78.5v-157z">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                  </button>
+                </span></a>
+              </div>
+
+            </div>
+
+            <!-- This is the initial Wordle text. After navigation, s.js replaces the content of JSdesktopDesc from the JS2d descriptions array. Update both places if changing the initial project description. -->
+<div id="javascript-project-description" class="areaTitle site-rich-text">
+              <p id="JSdesktopDesc" class="body-text site-rich-text__text"><span style="font-size:31px;" class="site-rich-text__text">This recreation of the online game Wordle was my
+                  submission to College Board for my AP Computer Science Principles Class.</span></p>
+            </div>
+
+            <!-- JSTITLE is updated by s.js. It differs from the static JavaScript section heading below. -->
+<div id="javascript-project-title" class="areaTitle site-rich-text">
+              <h2 class="heading-text site-rich-text__text"><span id="JSTITLE" class="site-rich-text__text">Wordle</span>
+              </h2>
+            </div>
+            
+          </div>
+
+          <div id="javascript-section-heading" class="areaTitle site-rich-text">
+            <h2 class="heading-text site-rich-text__text"><span class="site-rich-text__text">JavaScript</span>
+            </h2>
+          </div>
+          
+        </section>
+
+        <!-- Original online editor, controls and description -->
+        <section id="java-projects-section" tabindex="-1" class="java-section-layout">
+          <div id="background-layers-java-projects-section">
+            <div></div>
+            <div id="background-media-java-projects-section"></div>
+          </div>
+          
+          <div id="java-projects-content" role="" class="java-content-layout">
+            <div class="RedBackground"></div>
+            
+            <div id="java-project-iframe-container" style="height:auto;">
+              <div style="background-color:rgb(var(--bgColor, var(--color_11)), var(--alpha-bgColor, 1));border-radius:var(--borderRadius, 0);border:calc(1px * var(--borderWidth, 0)) solid rgb(var(--borderColor, var(--color_15)), var(--alpha-borderColor, 0.7));padding:calc(1px * var(--verticalPadding, 0)) calc(1px * var(--horizontalPadding, 0));">
+                
+                <div style="height: 624px;max-height: 624px;">
+                  <div class="full_container" style="margin-top: 30px;">
+                    <!-- This loads Online Java from an external URL. Its initial URL should match the first URL in JAVA2d in s.js. -->
+<iframe title="Selected Java program on Online Java" id="JAVAiframe" frameborder="0" width="100%" height="600px" src="https://www.online-java.com/2pZKj14e35?embed=true"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="java-project-embed-container" style="height:auto;">
+              <div style="background-color:rgb(var(--bgColor, var(--color_11)), var(--alpha-bgColor, 1));border-radius:var(--borderRadius, 0);border:calc(1px * var(--borderWidth, 0)) solid rgb(var(--borderColor, var(--color_15)), var(--alpha-borderColor, 0.7));padding:calc(1px * var(--verticalPadding, 0)) calc(1px * var(--horizontalPadding, 0));">
+              </div>
+            </div>
+
+            <!-- These seven project buttons and arrows use the JAVA functions in s.js. The CSS class pagination2 uses slightly smaller button padding. -->
+<div id="java-project-pagination-container" role="" class="project-pagination-layout">
+              <div class="nexts2">
+                <a aria-label="Previous project" id="JAVAback" href="#/" onclick="JAVAback_click()" class="active">
+                  <span class="ButtonSize" aria-hidden="true"data-testid="stylablebutton-icon">
+                    <span>
+                      <svg viewBox="0 0 200 200" height="200" width="400"xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                      <g transform="scale(-1,1) translate(-180,0)">
+                        <path
+                          d="M20.5 21.5l159 78.5-159 78.5v-157z">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                  </button>
+                </span></a>
+              </div>
+              <div class="pagination2" style="margin-left: 25px;margin-right: 25px;">
+                <a aria-label="Select project 1" id="JAVApag1" href="#/" onclick="JAVApag1()" class="active"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span>
+                    </button>
+                  </span></a>
+                <a aria-label="Select project 2" id="JAVApag2" href="#/" onclick="JAVApag2()" class="a"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span></span></a>
+                <a aria-label="Select project 3" id="JAVApag3" href="#/" onclick="JAVApag3()" class="a"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span></span></a>
+                <a aria-label="Select project 4" id="JAVApag4" href="#/" onclick="JAVApag4()" class="a"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span></span></a>
+                <a aria-label="Select project 5" id="JAVApag5" href="#/" onclick="JAVApag5()" class="a"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span></span></a>
+                <a aria-label="Select project 6" id="JAVApag6" href="#/" onclick="JAVApag6()" class="a"><span class="ButtonSize" aria-hidden="true"><span><svg
+                        viewBox="0 0 200 200" height="200" width="150"
+                        xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                        <g>
+                          <path
+                            d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                          </path>
+                        </g>
+                      </svg>
+                    </span></span></a>
+                    <a aria-label="Select project 7" id="JAVApag7" href="#/" onclick="JAVApag7()" class="a"><span class="ButtonSize" aria-hidden="true"><span><svg
+                          viewBox="0 0 200 200" height="200" width="150"
+                          xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                          <g>
+                            <path
+                              d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z">
+                            </path>
+                          </g>
+                        </svg>
+                      </span></span></a>
+              </div>
+              <div class="nexts">
+                <a aria-label="Next project" id="JAVAnext" href="#/" onclick="JAVAnext_click()" class="a">
+                  <span class="ButtonSize" aria-hidden="true"data-testid="stylablebutton-icon">
+                    <span>
+                      <svg viewBox="0 0 200 200" height="200" width="400"xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                      <g>
+                        <path
+                          d="M20.5 21.5l159 78.5-159 78.5v-157z">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                  </button>
+                </span></a>
+              </div>
+
+            </div>
+
+            <!-- This is the initial text. JAVAtextSize in s.js replaces it when the selected project changes; keep the initial text and JAVA2d entry in sync. -->
+<div id="java-project-description" class="areaTitle site-rich-text">
+              <p id="JAVAdesktopDesc" class="body-text site-rich-text__text"><span class="site-rich-text__text">I created this
+                  as just some demo app of a Sandwich shop simulator for fun one day and worked on it
+                  for a while during my CSA class.</span></p>
+            </div>
+
+            <!-- The JAVATITLE span is the JavaScript update target. Keep its ID if you want the original script to work unchanged. -->
+<div id="java-project-title" class="areaTitle site-rich-text">
+              <h2 class="heading-text site-rich-text__text"><span id="JAVATITLE" class="site-rich-text__text">Shop
+                  Simulator</span></h2>
+            </div>
+            
+          </div>
+
+          <div id="java-section-heading" class="areaTitle site-rich-text">
+            <h2 class="heading-text site-rich-text__text"><span class="site-rich-text__text">Java</span></h2>
+          </div>
+          
+        </section>
+        
+      </main></div><!-- The original project script still writes to these hidden IDs. They are not mobile layouts. -->
+<div id="legacy-description-targets" hidden><p id="JSipadDesc"></p><p id="JSphoneDesc"></p><p id="JAVAipadDesc"></p><p id="JAVAphoneDesc"></p></div>
+<!-- Footer. Update this in all five pages when changing the credits or date. -->
+<footer class="site-bottom"><div class="shell"><div class="footer-top"><a class="brand" href="index.html">Tyler Kweskin<span class="pink">.</span></a><p>Computer Science · Rutgers University</p><a href="contact.html">Contact me</a></div><div class="footer-meta"><span>© 2026 Tyler Kweskin · Updated October 22, 2026</span></div><p class="credits">Personal projects and code by Tyler Kweskin; collaborations noted in project descriptions. Code.org App Lab powers the JavaScript demos; Online Java hosts the Java demos.</p></div></footer>
+<!-- Shared navigation appears when the header scrolls out of view. -->
+<script src="js/navigation.js?v=2" defer></script>
+</body>
+</html>
