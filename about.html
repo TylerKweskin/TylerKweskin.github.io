@@ -8,6 +8,8 @@
     <meta name="description" content="Tyler Kweskin’s portfolio: programming projects, work experiences, and computer science education at Rutgers University.">
     <!-- Shared page styles. -->
     <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="stylesheet" href="CSS/photography.css">
+    <link rel="stylesheet" href="CSS/about-media.css">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   </head>
   <body class="">
@@ -23,11 +25,27 @@
         <div>
         <h1>About me</h1>
         <p class="lead">My experience includes helping students learn computer science, working with enterprise data, and researching how financial institutions can use AI while managing its risks.</p>
+          <div class="workspace-audio">
+            <h2>My workspace</h2>
+            <p>A short tour of my desk at Rutgers, how I use my devices together, and some of the interests represented around it.</p>
+            <audio controls preload="metadata" aria-label="Tyler describes his workspace">
+              <source src="assets/audio/workspace.wav" type="audio/wav">
+              <a href="assets/audio/workspace.wav">Download the recording</a>.
+            </audio>
+            <details class="audio-transcript">
+              <summary>Read transcript</summary>
+              <p class="transcript-note">Lightly edited for readability.</p>
+              <p>This photo is of my workspace in my apartment at Rutgers University. I spend most of my time here, whether I'm working on assignments, developing personal projects, or gaming in my free time.</p>
+              <p>My main computer is my laptop, which I use with an external keyboard and mouse. I also use my iPad as a second screen, usually to watch videos while I'm working on something else. I've set it up so the audio plays through my laptop over Bluetooth, allowing me to use the same headphones for both devices.</p>
+              <p>I've decorated my desk with books, collectibles, and memorabilia from some of my favorite games and movies, including The Lord of the Rings and Pokémon.</p>
+              <p>I've arranged everything to make the space very comfortable and practical for both work and entertainment, and just looking at a bunch of my interests outside of computer science.</p>
+            </details>
+          </div>
         </div>
-        <!-- Workspace photo by Olena Bohovyk, used under the Unsplash License. -->
+        <!-- My own workspace photo accompanies the audio tour. -->
         <figure class="about-artwork">
-          <img src="assets/about-unsplash-olena-bohovyk.jpeg" alt="Laptop and desktop computer on a desk with books and plants beside a window." width="1152" height="1536">
-          <figcaption>Photo by <a href="https://unsplash.com/photos/macbook-pro-dIMJWLx1YbE" target="_blank" rel="noopener noreferrer">Olena Bohovyk / Unsplash</a></figcaption>
+          <img src="assets/workspace.jpeg" alt="My desk at Rutgers with a laptop, iPad, external keyboard, books, and game and movie collectibles." width="1555" height="1600">
+          <figcaption>My workspace at Rutgers. Photo by Tyler Kweskin.</figcaption>
         </figure>
       </section>
       <!-- Explain the work here; the résumé holds dates and concise role descriptions. -->
@@ -44,18 +62,46 @@
           <p>I independently authored an AI Security Spotlight Report and presented it twice: first online to more than 340 financial institution representatives nationwide, then in person at a joint FBIIC-FSSCC meeting.</p>
         </div>
       </section>
-      <section class="section intro-grid">
+      <!-- Recommended viewing. The video plays here without leaving the page. -->
+      <section class="section recommended-video" aria-labelledby="readable-code-heading">
+        <div>
+          <h2 id="readable-code-heading">Recommended video (temporary)</h2>
+          <p>I’d recommend this CodeAesthetic video to students who already know the basics but want to make their code easier to follow. It shows how to cut down on excessive nesting without changing what the code does.</p>
+          <p>I’ll replace this with a video of me teaching recursion.</p>
+          <p class="video-credit"><a href="https://www.youtube.com/watch?v=CFRhGnuXG-4" target="_blank" rel="noopener noreferrer">Why You Shouldn't Nest Your Code</a><br>By CodeAesthetic</p>
+          <p class="video-note">Creator's correction: at 2:20, the inverted condition should use “less than or equal,” rather than “less than.”</p>
+        </div>
+        <div class="video-embed">
+          <iframe src="https://www.youtube-nocookie.com/embed/CFRhGnuXG-4" title="Why You Shouldn't Nest Your Code by CodeAesthetic" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="section work-background">
         <div>
           <h2>Data and development</h2>
           <p>At Banc of California, I worked in Enterprise Data Information Technology on data-driven projects and workflow processes intended to improve efficiency.</p>
           <p>Earlier, I worked on a Unity game for the Laguna Beach Unified School District’s Science Department with IC 2020 games. The project used game development to support student learning.</p>
         </div>
-        <div>
-          <h2>Outside of work</h2>
+      </section>
+      <section class="section outside-work" aria-labelledby="outside-heading">
+          <h2 id="outside-heading">Outside of work</h2>
           <p>I enjoy gaming and photography, and I run a home server where I set up applications and automations for my own use.</p>
           <p>In photography, I’m interested in quiet spaces, reflections, and shadows. I like the atmosphere of Michael Kenna’s work and want to be intentional about what a photograph makes someone notice.</p>
-          <a class="text-link" href="https://www.instagram.com/tyler_kweskin/" target="_blank" rel="noopener noreferrer">My photography on Instagram ↗</a>
-        </div>
+          <p>These are some of my photos from around campus and while traveling.</p>
+          <div class="photography" role="region" aria-roledescription="carousel" aria-label="Photography slideshow">
+            <div class="photography-stage">
+              <img class="photography-image" alt="" hidden>
+              <p class="photography-message">Loading photos…</p>
+              <button class="photography-arrow photography-previous" type="button" aria-label="Previous photo">‹</button>
+              <button class="photography-arrow photography-next" type="button" aria-label="Next photo">›</button>
+            </div>
+            <div class="photography-controls">
+              <span class="photography-counter" aria-label="Photo number">01 / 15</span>
+              <div class="photography-track" aria-hidden="true"><span class="photography-progress"></span></div>
+              <button class="photography-toggle" type="button" aria-label="Pause slideshow">Ⅱ Pause</button>
+            </div>
+          </div>
+          <noscript><p>Enable JavaScript to view the slideshow, or view my photos on Instagram below.</p></noscript>
+          <p class="photography-link"><a class="text-link" href="https://www.instagram.com/tyler_kweskin/" target="_blank" rel="noopener noreferrer">More photos on Instagram ↗</a></p>
       </section>
     </main>
     <!-- Footer. Update this in all five pages when changing the credits or date. -->
@@ -64,11 +110,13 @@
         <div class="footer-top"><a class="brand" href="index.html">Tyler Kweskin<span class="pink">.</span></a>
           <p>Computer Science · Rutgers University</p>
           <a href="contact.html">Contact me</a></div>
-        <div class="footer-meta"><span>© 2026 Tyler Kweskin · Updated October 22, 2026</span></div>
+        <div class="footer-meta"><span>© 2026 Tyler Kweskin · Updated November 5, 2026</span></div>
         <p class="credits">Personal projects and code by Tyler Kweskin; collaborations noted in project descriptions. Code.org App Lab powers the JavaScript demos; Online Java hosts the Java demos.</p>
       </div>
     </footer>
     <!-- Shared floating navigation appears after the main header scrolls out of view. -->
     <script src="js/navigation.js?v=2" defer></script>
+    <script src="js/photography-data.js" defer></script>
+    <script src="js/photography.js" defer></script>
   </body>
 </html>

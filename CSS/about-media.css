@@ -1,0 +1,16 @@
+/* Audio stays beside the photo it describes. */
+.workspace-audio { margin-top: 32px; max-width: 650px; }
+.workspace-audio h2 { font-size: 25px; margin-bottom: 12px; }
+.workspace-audio p { color: var(--muted); }
+.workspace-audio audio { display: block; width: 100%; margin-top: 18px; color-scheme: dark; }
+.audio-transcript { margin-top: 16px; color: var(--muted); }
+.audio-transcript summary { cursor: pointer; color: var(--ink); }
+.audio-transcript p { font-size: 15px; }
+.audio-transcript .transcript-note { font-size: 13px; }
+/* Keep the recommended video separate from my own projects and teaching work. */
+.recommended-video { display: grid; grid-template-columns: 350px 1fr; gap: 48px; align-items: center; }
+.recommended-video p { color: var(--muted); }
+.video-credit { font-size: 15px; }
+.recommended-video .video-note { font-size: 13px; }
+.video-embed { aspect-ratio: 16 / 9; background: #161517; border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
+.video-embed iframe { display: block; width: 100%; height: 100%; border: 0; }
